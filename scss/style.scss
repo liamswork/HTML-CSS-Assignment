@@ -1,3 +1,45 @@
-h1{
-    color:red;
+$color-primary:#323544;
+
+*{
+    box-sizing: border-box;
+}
+
+.fcontainer{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper {
+    flex: 1;
+  }
+
+footer{
+    margin-top: auto;
+    background-color: $color-primary;
+    ul{
+        list-style:none;
+        li{
+            list-style:none;
+            a{
+                color:#fff;
+            }
+        }
+    }
+    img{
+        //change these values later.
+        width:320px;
+        height:60px
+    }
+    &-col{
+        display:flex;
+    }
 }
