@@ -1,0 +1,20 @@
+////////////////BASE, DEFAULTS, FONTS, VARIABLES//////////////
+//Base webpage colours
+$color-primary:#333645;
+$color-secondary:#323544;
+$color-tertiary:#212330;
+//Social media colours
+$color-facebook:#3b5998;
+$color-linkedin:#0077b5;
+$color-twitter:#00aced;
+$color-instagram:#d93175;
+
+
+//Button square behind buttons.
+.btn-primary{
+    color:#fff;
+    background-color: #212330;
+    border-color: #212330;
+    padding:12px 22px 16px;
+}
+    

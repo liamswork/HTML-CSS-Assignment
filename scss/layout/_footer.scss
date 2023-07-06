@@ -1,0 +1,93 @@
+//FOOTER STYLING
+footer{
+    font-family: Poppins;
+    margin-top: auto;
+    background-color: $color-secondary;
+    padding-top:47px;
+    //FOOTER NAV BOX 
+    .footer-nav{
+        h4{
+            font-size: 1em;
+        }
+        ul{
+          li{
+              list-style:none;
+              line-height: 1.3rem;
+              a{
+                  font-weight: 400;
+                  font-size: 0.8125rem;
+                  color:#fff;
+                  text-decoration: none;
+              }
+            }
+        }
+    }
+
+    //FOOTER SOCIAL BOX
+    .footer-social{
+        width:100%;
+        a{
+        text-decoration: none;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        }
+
+        span{
+        font-size:1.6em;
+        text-align: center;
+        }
+    } 
+    .footer-image{
+        width:100%
+    }
+
+    .fcontainer{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-left:15px;
+        padding-right:15px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media (min-width: 768px){
+            width: 750px;
+        }
+        @media (min-width: 992px){
+            width: 970px;
+        }
+        @media (min-width: 1260px){
+            width: 1200px;
+        }
+    }
+  
+  .footer-col{
+      padding:15px 15px;
+    }
+  
+  .footer-social{
+
+    a{
+      text-decoration: none;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    span{
+      font-size:1.6em;
+      text-align: center;
+    }
+
+
+} 
+ img{
+        //change these values later. This effects the logo only, not the icons for social media.
+        width:320px;
+        height:60px
+    }
+    
+  h4{
+        color:#fff;
+        text-transform: uppercase;
+    }
+
+  }

@@ -1,7 +1,10 @@
-////////////////BASE, DEFAULTS, FONTS, VARIABLES//////////////
-$color-primary:#333645;
-$color-secondary:#323544;
-$color-footer-btn:#212330;
+@import 'base/index';
+@import 'layout/index';
+@import 'module/index';
+@import 'state/index';
+@import 'theme/index';
+
+
 
 @font-face {
     font-family: 'icomoon';
@@ -48,9 +51,11 @@ $color-footer-btn:#212330;
   .icon-instagram1:before {
     content: "\e901";
   }
-  .icon-facebook:before {
+ 
+ .icon-facebook:before {
     content: "\e900";
-  }
+  } 
+  
   
 *{
     box-sizing: border-box;
@@ -63,14 +68,8 @@ html{
 }
 ///////////////DIVS AND CONTAINERS //////////////////
 
-
-.fcontainer{
-    display:flex;
-    padding:15px 15px;
-}
-
-.footer-col{
-    padding:15px 15px;
+h4{
+  font-weight: 400;
 }
 
 
@@ -91,7 +90,7 @@ footer{
     font-family: Poppins;
     margin-top: auto;
     background-color: $color-secondary;
-    
+}
 /////////////////FOOTER NAV BOX 
   .footer-nav{
       h4{
@@ -105,49 +104,9 @@ footer{
                   font-weight: 400;
                   font-size: 0.8125rem;
                   color:#fff;
-                  text-decoration: none;
               }
             }
       }
   }
-
-/////////////FOOTER SOCIAL BOX
  
-.footer-social{
-  a{
-    text-decoration: none;
-    margin-right: 10px;
-    margin-bottom: 10px;
-  }
-  span{
-    font-size:1.6em;
-    text-align: center;
-  }
-} 
-    
-    img{
-        //change these values later. This effects the logo only, not the icons for social media.
-        width:320px;
-        height:60px
-    }
-    
-    h4{
-        color:#fff;
-        text-transform: uppercase;
-    }
-    
-    .btn-primary{
-      background-color:$color-footer-btn;
-      padding:12px 22px 16px;
-    }
-  }
 
-
-///////////STYLING COMPONENTS///////////////
-
-//Button square behind buttons.
-.btn-primary{
-    color:#fff;
-    background-color: #333645;
-    border-color: #333645;
-}
