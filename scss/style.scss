@@ -1,3 +1,4 @@
+////////////////BASE, DEFAULTS, FONTS, VARIABLES//////////////
 $color-primary:#333645;
 $color-secondary:#323544;
 
@@ -45,39 +46,46 @@ $color-secondary:#323544;
 *{
     box-sizing: border-box;
 }
-
-.Container-Socialmedia{
-    a{
-        text-decoration: none;
-        color:#fff;
-    }
-
+ul{
+  padding:0;
 }
+///////////////DIVS AND CONTAINERS //////////////////
+
 
 .fcontainer{
     display:flex;
     padding:15px 15px;
 }
 
+.footer-col{
+    padding:15px 15px;
+
+}
+
+
+//////////////////MAIN CONTENT///////////////////////////
+
 body {
+    //temporary flex instructions to keep footer at the bottom
     margin: 0;
     padding: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    ///////////////////////////////////////////////////////////
   }
 
 footer{
     margin-top: auto;
     background-color: $color-secondary;
+    text-decoration: none;
     ul{
-        padding:15px 15px;
+
         list-style:none;
         li{
             list-style:none;
             a{
                 color:#fff;
-                text-decoration: none;
             }
         }
     }
@@ -90,41 +98,3 @@ footer{
         text-transform: uppercase;
     }
 }
-
-        /* CSS for small screens (mobile-first approach) */
-        @media screen and (max-width: 767px) {
-            footer {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-              }
-
-            .fcontainer{
-                flex-wrap: wrap;
-                justify-content: center;
-                div{
-                flex: 0 0 100%;
-                margin-bottom: 20px;
-                }
-            }
-        }
-
-        /* CSS for medium screens */
-        @media screen and (min-width: 768px) and (max-width: 1023px) {
-            
-        }
-
-        /* CSS for large screens */
-        @media screen and (min-width: 1024px) {
-            footer {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                text-align: center;
-                li,h4{
-                    text-align: left;
-                }
-              }
-            
-        }
