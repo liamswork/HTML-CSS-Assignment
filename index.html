@@ -10,15 +10,56 @@
 
 </head>
 <body>
-    
-    <footer>
-        <div class="fcontainer">
-            <!--Social Media Links-->
-            <div class="footer-image">
-                <img src="img/nm-logo-white-med.png" alt="Netmatters Logo">
+  <!--Newsletter Subscription-->
+  <div class="newsletter-full-width"> <!--Colour this, make poppins default font across whole page in base styles, inspect flex properties on netmatters for newsletter-->
+    <div class="container">             <!--Add header as well, to start our content body. So we can eventually get some scrolling functionality.-->
+      <form method="POST" action="#" accept-charset="UTF-8" id="sign-up" class="sign-up">
+        <input name="_token" type="hidden" value="M3hTeCSqf35TQqHNTsPhkvczh1wBw76w3h956TtO">
+        <input name="return_url" type="hidden" value="#">
+        <h2>Email Newsletter Sign-Up</h2>
+        <div class="sign-up-inputs-wrapper">
+          <div class="sign-up-input">
+            <div class="form-group">
+              <label for="newsletter-name" class="required">Your Name</label>
+              <input class="form-control" id="newsletter-name" name="name" type="text" value="">
             </div>
-                <div class="footer-col footer-social">
+          </div>
+          <div class="sign-up-input">
+            <div class="form-group">
+              <label for="newsletter-email" class="required">Your Email</label>
+              <input class="form-control" id="newsletter-email" name="email" type="email" value="">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class=" pretty-checkbox">
+            <span class="media">
+              <span class="media-left checkbox-left">
+                <span class="button">
+                  <span class="mdi-action-done"></span>
+                  <input name="marketing_preference" type="checkbox" value="1">
+                </span>
+              </span>
+              <span class="media-body"> Please tick this box if you wish to receive marketing information from us. Please see our <a href="#" target="_blank" rel="#">Privacy Policy</a> for more information on how we keep your data safe. </span>
+            </span>
+          </label>
+        </div>
+        <button name="submit" class="btn-subscribe"> Subscribe </button> <!--Strip deault styles from this button. Our logo "buttons" are not actually buttons, so dont use that-->
+      </form>
+    </div>
+  </div>
+
+    <footer>
+        <div class="container">
+            <!--Social Media Links-->
+          <div class="footer-row">
+                <div class="footer-social">
+                  <div class="footer-image">
+                    <img src="img/nm-logo-white-med.png" alt="Netmatters Logo">
+                  </div>
+
                     <h4> Follow us on: </h4>
+                    <div class="footer-social-logos">
                     <a class="facebook btn-primary" href="#" target="_blank" rel="">
                         <span class="icon-facebook"></span>
                     </a>
@@ -31,6 +72,7 @@
                     <a class="btn-primary instagram" href="#" target="_blank" rel="">
                         <span class="icon-instagram1"></span>
                     </a>
+                  </div>
                 </div>
 
             <!--AboutNetmatters-->
@@ -69,35 +111,32 @@
                   </li>
                 </ul>
               </div>
-        
+            
             <!--OurServices-->
             <div class="footer-col footer-nav">
                 <h4> Our services </h4>
                 <ul>
-                <li class="">
-                    <a href="#"> Financial Services </a>
-                </li>
-                <li class="">
-                    <a href="#"> Construction </a>
-                </li>
-                <li class="">
-                    <a href="#"> Retail &amp; E-Commerce </a>
-                </li>
-                <li class="">
-                    <a href="#"> Non-Profits </a>
-                </li>
-                <li class="">
-                    <a href="#"> SME's </a>
-                </li>
-                <li class="">
-                    <a href="#"> Healthcare </a>
-                </li>
-                <li class="">
-                    <a href="#"> Education &amp; Training </a>
-                </li>
-                <li class="">
-                    <a href="#"> Travel &amp; Leisure </a>
-                </li>
+                  <li class=" ">
+                    <a href="#"> Bespoke Software </a>
+                  </li>
+                  <li class=" ">
+                    <a href="#"> IT Support </a>
+                  </li>
+                  <li class=" ">
+                    <a href="#"> Digital Marketing </a>
+                  </li>
+                  <li class=" ">
+                    <a href="#"> Telecoms Services </a>
+                  </li>
+                  <li class=" ">
+                    <a href="#"> Web Design </a>
+                  </li>
+                  <li class=" ">
+                    <a href="#"> Cyber Security </a>
+                  </li>
+                  <li class=" ">
+                    <a href="#"> Developer Training </a>
+                  </li>
                 </ul>
             </div>
 
@@ -150,8 +189,18 @@
                   </li>
                 </ul>
               </div>
-        </div>
-        
+            </div>
+          </div>
+          <!--Copyright/Sitemap-->
+          <div class="container footer-bottom">
+            <div class="license"> © Copyright Netmatters 2023. All rights reserved. <!-- License must be a flex at some point. Reduce space between li, and this Copyright text-->
+              <ul>
+                <li class=" ">
+                  <a href="https://www.netmatters.co.uk/sitemap.xml"> Sitemap </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </footer>
 </body>
 

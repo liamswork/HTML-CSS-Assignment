@@ -1,9 +1,61 @@
 //FOOTER STYLING
 footer{
     font-family: Poppins;
-    margin-top: auto;
     background-color: $color-secondary;
-    padding-top:47px;
+    padding-top: 27px;
+    @media (min-width: 1260px){
+            padding:47px 0 0;
+    }
+
+    //Footer Container ---------------------
+    .container{
+        //Footer Row Container ---------------------
+        .footer-row{
+            display:flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            //FOOTER SOCIAL BOX
+            .footer-social{
+                width:100%;
+                a{
+                text-decoration: none;
+                margin-right: 10px;
+                    @media (max-width: 480px){
+                        width:35%; //Specifcally 35%, will never display 3 on a line on small screens.
+                    }
+                }
+
+                span{
+                font-size:1.6em;
+                text-align: center;
+                }
+                @media (min-width: 1260px)
+                {
+                width: 400px;
+                }
+                
+                .footer-image{
+                    width:250px;
+                    @media (min-width:480px){
+                        width:320px;          
+                    }
+                    img{
+                        width:100%
+                    }
+                }
+
+                .footer-social-logos{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    margin-bottom: 30px;
+                }
+            } 
+        }
+    
+
+    }
+
     //FOOTER NAV BOX 
     .footer-nav{
         h4{
@@ -12,7 +64,7 @@ footer{
         ul{
           li{
               list-style:none;
-              line-height: 1.3rem;
+              line-height: 1.375rem;
               a{
                   font-weight: 400;
                   font-size: 0.8125rem;
@@ -23,50 +75,20 @@ footer{
         }
     }
 
-    //FOOTER SOCIAL BOX
-    .footer-social{
-        width:100%;
-        a{
-        text-decoration: none;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        }
 
-        span{
-        font-size:1.6em;
-        text-align: center;
-        }
-    } 
-    .footer-image{
-        width:100%
-    }
-
-    .fcontainer{
-        display:flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        padding-left:15px;
-        padding-right:15px;
-        margin-left: auto;
-        margin-right: auto;
-
-        @media (min-width: 768px){
-            width: 750px;
-        }
-        @media (min-width: 992px){
-            width: 970px;
-        }
-        @media (min-width: 1260px){
-            width: 1200px;
-        }
-    }
   
   .footer-col{
+    h4{
+        margin:0;
+    }
       padding:15px 15px;
+      margin-bottom:30px;
+      @media(max-width:992px){
+        width:50%
+      }
     }
   
   .footer-social{
-
     a{
       text-decoration: none;
       margin-right: 10px;
@@ -78,16 +100,26 @@ footer{
     }
 
 
-} 
- img{
-        //change these values later. This effects the logo only, not the icons for social media.
-        width:320px;
-        height:60px
-    }
+    } 
     
   h4{
         color:#fff;
         text-transform: uppercase;
     }
 
+
+    .footer-bottom{
+        ul{
+            list-style: none;
+        }
+        a{
+            color:#fff;
+            text-decoration: none;
+        }
+        display:flex;
+        text-decoration: none;
+        color:#fff;
+        width: 100%;
+        background-color:$color-tertiary;
+    }
   }

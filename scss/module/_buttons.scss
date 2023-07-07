@@ -1,0 +1,12 @@
+.btn-subscribe {
+    @extend .btn-primary;
+    outline: none;
+    padding: 7px 20px 3px;
+    height: 56px;
+    font-size: 1.063rem;
+    border-radius: 0 3px 3px 0;
+    border: none;
+    vertical-align: bottom;
+    background-color: #999aa2;
+    color: #fff;
+}
