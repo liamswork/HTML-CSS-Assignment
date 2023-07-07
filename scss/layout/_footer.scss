@@ -9,18 +9,32 @@ footer{
 
     //Footer Container ---------------------
     .container{
+        padding-left:15px;
+        padding-right:15px;
+        margin-left: auto;
+        margin-right: auto;
         //Footer Row Container ---------------------
         .footer-row{
             display:flex;
             justify-content: space-between;
             flex-wrap: wrap;
             //FOOTER SOCIAL BOX
-            .footer-social{
-                width:100%;
+            .footer-company-info{
+                display:flex;
+                justify-content: space-between;
+                width:300px;
+                @media (min-width: 1260px)
+                {
+                width: 400px;
+                }
+                
+                
                 a{
                 text-decoration: none;
                 margin-right: 10px;
-                    @media (max-width: 480px){
+                margin-bottom: 10px;
+                    @media (max-width: 480px)
+                    {
                         width:35%; //Specifcally 35%, will never display 3 on a line on small screens.
                     }
                 }
@@ -28,10 +42,6 @@ footer{
                 span{
                 font-size:1.6em;
                 text-align: center;
-                }
-                @media (min-width: 1260px)
-                {
-                width: 400px;
                 }
                 
                 .footer-image{
@@ -52,74 +62,59 @@ footer{
                 }
             } 
         }
-    
 
-    }
-
-    //FOOTER NAV BOX 
-    .footer-nav{
-        h4{
-            font-size: 1em;
-        }
-        ul{
-          li{
-              list-style:none;
-              line-height: 1.375rem;
-              a{
-                  font-weight: 400;
-                  font-size: 0.8125rem;
-                  color:#fff;
-                  text-decoration: none;
-              }
+    .row{
+        //FOOTER NAV BOX, This is the box that holds the nav lists and links.
+        .footer-nav{
+            h4{
+                font-size: 1em;
+            }
+            ul{             //Nav list of links
+                li{
+                    list-style:none;
+                    line-height: 1.375rem;
+                    a{
+                        font-weight: 400;
+                        font-size: 0.8125rem;
+                        color:#fff;
+                        text-decoration: none;
+                    }
+                }
             }
         }
-    }
 
-
-  
-  .footer-col{
-    h4{
-        margin:0;
-    }
-      padding:15px 15px;
-      margin-bottom:30px;
-      @media(max-width:992px){
-        width:50%
-      }
-    }
-  
-  .footer-social{
-    a{
-      text-decoration: none;
-      margin-right: 10px;
-      margin-bottom: 10px;
-    }
-    span{
-      font-size:1.6em;
-      text-align: center;
-    }
-
-
-    } 
+        .footer-col{
+            h4{
+                margin:0;
+            }
+            padding-left:15px;
+            padding-right:15px;
+            margin-bottom:30px;
+            @media(max-width:992px){
+                width:50%
+            }
+        }
     
-  h4{
-        color:#fff;
-        text-transform: uppercase;
-    }
-
-
-    .footer-bottom{
-        ul{
-            list-style: none;
-        }
-        a{
+        
+        h4{
             color:#fff;
-            text-decoration: none;
+            text-transform: uppercase;
         }
-        display:flex;
-        text-decoration: none;
-        color:#fff;
-        width: 100%;
-        background-color:$color-tertiary;
     }
   }
+    //Footer-bottom, outside of nav container scope.
+  .footer-bottom{
+    ul{
+        list-style: none;
+    }
+    a{
+        color:#fff;
+        text-decoration: none;
+    }
+    display:flex;
+    text-decoration: none;
+    color:#fff;
+    width: 100%;
+    background-color:$color-tertiary;
+    }
+}
