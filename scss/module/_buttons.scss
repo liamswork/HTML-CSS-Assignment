@@ -1,12 +1,21 @@
 .btn-subscribe {
-    @extend .btn-primary;
     outline: none;
-    padding: 7px 20px 3px;
-    height: 56px;
+    height: auto;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-transform: uppercase;
     font-size: 1.063rem;
-    border-radius: 0 3px 3px 0;
-    border: none;
-    vertical-align: bottom;
-    background-color: #999aa2;
+    border-radius: 3px;
+    white-space: normal;
     color: #fff;
+    background-color: #333645;
+    border-color: #333645;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
 }

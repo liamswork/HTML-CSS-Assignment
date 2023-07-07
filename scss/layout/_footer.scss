@@ -7,8 +7,18 @@ footer{
             padding:47px 0 0;
     }
 
+    h4{
+        color:#fff;
+        text-transform: uppercase;
+    }
+
     //Footer Container ---------------------
     .container{
+        padding-left:15px;
+        padding-right:15px;
+        margin-left: auto;
+        margin-right: auto;
+    
         //Footer Row Container ---------------------
         .footer-row{
             display:flex;
@@ -16,10 +26,21 @@ footer{
             flex-wrap: wrap;
             //FOOTER SOCIAL BOX
             .footer-social{
-                width:100%;
+                width:300px;
+                
+                @media (max-width: 767px){
+                    width:100%
+                }
+                @media (min-width: 1260px)
+                {
+                width: 400px;
+                }
+
                 a{
                 text-decoration: none;
+                text-align: center;
                 margin-right: 10px;
+                margin-bottom: 10px;
                     @media (max-width: 480px){
                         width:35%; //Specifcally 35%, will never display 3 on a line on small screens.
                     }
@@ -29,14 +50,10 @@ footer{
                 font-size:1.6em;
                 text-align: center;
                 }
-                @media (min-width: 1260px)
-                {
-                width: 400px;
-                }
-                
+
                 .footer-image{
                     width:250px;
-                    @media (min-width:480px){
+                    @media (min-width:480px){       //R
                         width:320px;          
                     }
                     img{
@@ -49,65 +66,59 @@ footer{
                     flex-direction: row;
                     flex-wrap: wrap;
                     margin-bottom: 30px;
+                    @media(min-width: 480px){
+                        flex-wrap:nowrap;
+                    }
                 }
             } 
-        }
-    
 
-    }
-
-    //FOOTER NAV BOX 
-    .footer-nav{
-        h4{
-            font-size: 1em;
-        }
-        ul{
-          li{
-              list-style:none;
-              line-height: 1.375rem;
-              a{
-                  font-weight: 400;
-                  font-size: 0.8125rem;
-                  color:#fff;
-                  text-decoration: none;
-              }
+            //FOOTER NAV BOX 
+        .row{
+            display: flex;
+            flex-grow: 1;
+            margin-left: -15px;
+            margin-right: -15px;
+            flex-wrap:wrap;         //Default Wrap on small devices, this will change on a large device to display all content in one row.
+            .footer-nav{
+                padding-right:15px;
+                padding-left:15px;
+                margin-bottom:30px;
+                @media(max-width:768px){
+                    width:100%;
+                    flex-wrap:wrap;
+                }
+                @media(min-width:768px){
+                    width:50%;
+                    flex-wrap:nowrap;
+                }
+                @media(min-width:992px){
+                  width:25%;
+                  flex-wrap:nowrap;
+                }
+                h4{
+                    font-size: 1em;
+                    margin:0;
+                }
+                ul{
+                    li{
+                        list-style:none;
+                        line-height: 1.375rem;
+                        a{
+                            font-weight: 400;
+                            font-size: 0.8125rem;
+                            color:#fff;
+                            text-decoration: none;
+                        }
+                    }
+                }
             }
         }
     }
-
-
-  
-  .footer-col{
-    h4{
-        margin:0;
-    }
-      padding:15px 15px;
-      margin-bottom:30px;
-      @media(max-width:992px){
-        width:50%
-      }
-    }
-  
-  .footer-social{
-    a{
-      text-decoration: none;
-      margin-right: 10px;
-      margin-bottom: 10px;
-    }
-    span{
-      font-size:1.6em;
-      text-align: center;
-    }
-
-
-    } 
     
-  h4{
-        color:#fff;
-        text-transform: uppercase;
+
     }
 
-
+    //FOOTER BOTTOM BOX
     .footer-bottom{
         ul{
             list-style: none;

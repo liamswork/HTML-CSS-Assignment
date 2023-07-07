@@ -14,8 +14,6 @@
   <div class="newsletter-full-width"> <!--Colour this, make poppins default font across whole page in base styles, inspect flex properties on netmatters for newsletter-->
     <div class="container">             <!--Add header as well, to start our content body. So we can eventually get some scrolling functionality.-->
       <form method="POST" action="#" accept-charset="UTF-8" id="sign-up" class="sign-up">
-        <input name="_token" type="hidden" value="M3hTeCSqf35TQqHNTsPhkvczh1wBw76w3h956TtO">
-        <input name="return_url" type="hidden" value="#">
         <h2>Email Newsletter Sign-Up</h2>
         <div class="sign-up-inputs-wrapper">
           <div class="sign-up-input">
@@ -75,8 +73,10 @@
                   </div>
                 </div>
 
+
+            <div class="row">
             <!--AboutNetmatters-->
-            <div class="footer-col footer-nav">
+            <div class="footer-nav">
                 <h4> About Netmatters </h4>
                 <ul>
                   <li class=" ">
@@ -113,7 +113,7 @@
               </div>
             
             <!--OurServices-->
-            <div class="footer-col footer-nav">
+            <div class="footer-nav">
                 <h4> Our services </h4>
                 <ul>
                   <li class=" ">
@@ -141,7 +141,7 @@
             </div>
 
             <!--OurIndustries-->
-            <div class="footer-col footer-nav">
+            <div class="footer-nav">
                 <h4> Our Industries </h4>
                 <ul>
                   <li class=" ">
@@ -172,7 +172,7 @@
               </div>
           
             <!--Locations-->
-            <div class="footer-col footer-nav">
+            <div class="footer-nav">
                 <h4> Locations </h4>
                 <ul>
                   <li class=" ">
@@ -189,16 +189,18 @@
                   </li>
                 </ul>
               </div>
+              </div>
             </div>
           </div>
           <!--Copyright/Sitemap-->
-          <div class="container footer-bottom">
-            <div class="license"> © Copyright Netmatters 2023. All rights reserved. <!-- License must be a flex at some point. Reduce space between li, and this Copyright text-->
-              <ul>
-                <li class=" ">
-                  <a href="https://www.netmatters.co.uk/sitemap.xml"> Sitemap </a>
-                </li>
-              </ul>
+          <div class="footer-bottom">
+            <div class="container container-footer-bottom">
+              <div class="license"> © Copyright Netmatters 2023. <br class="visible-xs"> All rights reserved. <ul>
+                  <li class=" ">
+                    <a href="#"> Sitemap </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </footer>
