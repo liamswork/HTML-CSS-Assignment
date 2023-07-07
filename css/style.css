@@ -259,6 +259,7 @@ footer .footer-bottom {
 
 footer .footer-bottom ul {
   list-style: none;
+  padding: 0;
 }
 
 footer .footer-bottom a {
@@ -266,30 +267,16 @@ footer .footer-bottom a {
   text-decoration: none;
 }
 
-.btn-subscribe {
-  outline: none;
-  height: auto;
-  line-height: 35px;
-  padding: 5px 15px;
-  text-transform: uppercase;
-  font-size: 1.063rem;
-  border-radius: 3px;
-  white-space: normal;
+footer .footer-bottom .license {
+  text-decoration: none;
+  list-style: none;
   color: #fff;
-  background-color: #333645;
-  border-color: #333645;
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: 400;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
+  display: flex;
+  padding: 5px 0 10px;
+  width: 100%;
 }
 
 .newsletter-full-width {
-  margin-top: auto;
   background-color: #ddd;
 }
 
@@ -341,6 +328,44 @@ footer .footer-bottom a {
 .newsletter-full-width .sign-up {
   margin: 0;
   padding: 50px 0;
+}
+
+.clients-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: auto;
+}
+
+.clients-container .clients-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-container .item {
+  padding: 0 20px;
+  vertical-align: middle;
+}
+
+.btn-subscribe {
+  outline: none;
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+  color: #fff;
+  background-color: #333645;
+  border-color: #333645;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
 }
 
 .twitter:hover {

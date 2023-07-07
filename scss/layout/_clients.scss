@@ -1,0 +1,14 @@
+.clients-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top:auto; //Keeps our content pushed to the bottom. Will need removing each time we want to test content.
+    .clients-row{
+        display:flex;
+        justify-content: space-between;
+    }
+    .item{
+        padding: 0 20px;
+        vertical-align: middle;
+    }
+
+}

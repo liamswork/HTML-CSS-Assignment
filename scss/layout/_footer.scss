@@ -122,6 +122,7 @@ footer{
     .footer-bottom{
         ul{
             list-style: none;
+            padding:0;
         }
         a{
             color:#fff;
@@ -132,5 +133,14 @@ footer{
         color:#fff;
         width: 100%;
         background-color:$color-tertiary;
+        
+        .license{
+            text-decoration: none;
+            list-style: none;
+            color: #fff;
+            display: flex;
+            padding: 5px 0 10px;
+            width: 100%;
+        }
     }
   }
