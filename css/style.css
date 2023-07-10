@@ -106,6 +106,11 @@ body {
   }
 }
 
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
 footer {
   font-family: Poppins;
   background-color: #323544;
@@ -200,8 +205,6 @@ footer .container .footer-row .footer-social .footer-social-logos {
 footer .container .footer-row .row {
   display: flex;
   flex-grow: 1;
-  margin-left: -15px;
-  margin-right: -15px;
   flex-wrap: wrap;
 }
 
@@ -274,6 +277,11 @@ footer .footer-bottom .license {
   display: flex;
   padding: 5px 0 10px;
   width: 100%;
+}
+
+header .inner {
+  padding: 20px 0;
+  background-color: #7aa0c4;
 }
 
 .newsletter-full-width {

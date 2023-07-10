@@ -10,6 +10,62 @@
 
 </head>
 <body>
+  <!--Header-->
+  <header>
+    <div id="header">
+      <header>
+        <div class="inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4">
+                <div class="logo-container">
+                  <a class="logo" href="#">
+                    <img src="img/f-logo.png" alt="Netmatters">
+                  </a>
+                </div>
+              </div>
+              <div class="col-xs-3 hidden-sm hidden-md hidden-lg mobile-container"> <!-- Phone icon on mobile small screens-->
+                <a class="mobile" href="#">
+                  <span class="icon-phone_in_talk"></span>
+                </a>
+              </div>
+              <div class="col-xs-3 col-sm-6 col-md-7 col-lg-8">
+                <div class="actions">
+                  <a href="https://cwa-netmatters.screenconnect.com/" target="_blank" class="btn btn-it hidden-xs hidden-sm header-btn" rel="noopener noreferrer">
+                    <span class="pull-left icon-mouse"></span> Support </a>
+                  <a href="https://www.netmatters.co.uk/contact-us" class="btn btn-default hidden-xs hidden-sm header-btn">
+                    <span class="pull-left icon-paperplane"></span> Contact </a>
+                  <div class="hidden-xs pull-left search-form-wrapper--tablet">
+                    <form method="GET" action="https://www.netmatters.co.uk/search" accept-charset="UTF-8" class="search-form ">
+                      <label for="search-input" class="hidden">Search:</label>
+                      <input class="form-control search-bar" placeholder="Search..." id="search-input" name="keyword" type="text" value="">
+                      <button type="submit" id="search-submit">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                      </button>
+                    </form>
+                  </div>
+                  <button type="button" class="btn btn-primary hamburger hamburger--spin" data-toggle="sidebar">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="hidden-sm hidden-md hidden-lg search-form-wrapper--mobile">
+              <form method="GET" action="https://www.netmatters.co.uk/search" accept-charset="UTF-8" class="search-form ">
+                <label for="search-input" class="hidden">Search:</label>
+                <input class="form-control search-bar" placeholder="Search..." id="search-input" name="keyword" type="text" value="">
+                <button type="submit" id="search-submit">
+                  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+    
+  </header>
 
   <!--Client Slider Placeholder content-->
   <div class="clients-container">
@@ -226,7 +282,8 @@
           <!--Copyright/Sitemap-->
           <div class="footer-bottom">
             <div class="container container-footer-bottom">
-              <div class="license"> © Copyright Netmatters 2023. All rights reserved. <ul>
+              <div class="license"> © Copyright Netmatters 2023. All rights reserved. 
+                <ul>
                   <li class=" ">
                     <a href="#"> Sitemap </a>
                   </li>

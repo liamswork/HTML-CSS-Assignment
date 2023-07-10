@@ -76,8 +76,6 @@ footer{
         .row{
             display: flex;
             flex-grow: 1;
-            margin-left: -15px;
-            margin-right: -15px;
             flex-wrap:wrap;         //Default Wrap on small devices, this will change on a large device to display all content in one row.
             .footer-nav{
                 padding-right:15px;
