@@ -1,14 +1,36 @@
-.clients-container{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-top:auto; //Keeps our content pushed to the bottom. Will need removing each time we want to test content.
-    .clients-row{
-        display:flex;
-        justify-content: space-between;
-    }
-    .item{
-        padding: 0 20px;
-        vertical-align: middle;
-    }
+.cms-block{
+    .section-clients{
+        padding-top: 50px;
+        padding-bottom: 50px;
 
+        .sliding-clients{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            width:100%;
+            position: relative;
+            overflow:hidden; //This is temporary to stop screen from expanding on smaller screens due to size of clients images.
+        .owl-stage{
+            //some styles possibly missing here, alot of the styles are spread out on the original elements. Try to get stable and re-visit.
+            //possibly use some bootstrap visibility/media query to limit logo amounts to appear cleaner
+            display: flex;
+            .item{
+                padding: 0 20px;
+                vertical-align: middle;
+                position: relative;
+                    img {
+                      max-height: 70px;
+                      width: auto!important;
+                      max-width: 200px;
+                      -webkit-filter: grayscale(1);
+                       filter: grayscale(1);
+                       &:hover{
+                        filter:none;
+                       }
+                    }
+                }
+            }
+        }
+    }
 }

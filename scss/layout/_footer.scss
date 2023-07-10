@@ -41,14 +41,21 @@ footer{
                 text-align: center;
                 margin-right: 10px;
                 margin-bottom: 10px;
+                background-color: #212330;
+                font-size: 26px;
+                line-height: 26px;
+                padding: 12px 22px 16px;
+                margin-right: 7px;
+  
                     @media (max-width: 480px){
                         width:35%; //Specifcally 35%, will never display 3 on a line on small screens.
                     }
                 }
 
+                //icon specifics
                 span{
-                font-size:1.6em;
-                text-align: center;
+                    position: relative;
+                    top: 4px;
                 }
 
                 .footer-image{

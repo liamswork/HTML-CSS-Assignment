@@ -2,5 +2,41 @@ header{
     .inner{
         padding:20px 0;
         background-color: rgb(122, 160, 196);
+        //LOGO
+        .logo{
+            img{
+                max-width: 100%;
+                display:block;
+            }
+        }
+
+        //.ACTIONS
+        .actions{
+            .header-btn {
+                @media (min-width: 1260px){
+                display: inline-block!important;
+                }
+            }
+            .btn{
+                height: 56px;
+                line-height: 46px;
+                font-size: 1.125rem;
+                float: left;
+                
+                &-it {
+                    color: #fff;
+                    background-color: #4183d7;
+                    border-color: #4183d7;
+                }
+            }
+
+        }
+        .row{
+            padding: 0;
+            display: table-cell;
+            float: none;
+            vertical-align: middle;
+            width: 100%;
+        }
     }
 }

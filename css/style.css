@@ -17,16 +17,99 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: never;
+  speak: none;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  font-size: 50px;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mouse:before {
+  content: "\e906";
+}
+
+.icon-search:before {
+  content: "\e907";
+}
+
+.icon-arrow_forward:before {
+  content: "\e908";
+}
+
+.icon-security:before {
+  content: "\e909";
+}
+
+.icon-school:before {
+  content: "\e90a";
+}
+
+.icon-phone_in_talk:before {
+  content: "\e91b";
+}
+
+.icon-paperplane:before {
+  content: "\e919";
+}
+
+.icon-send:before {
+  content: "\e919";
+}
+
+.icon-flight:before {
+  content: "\e919";
+}
+
+.icon-email:before {
+  content: "\e919";
+}
+
+.icon-paperplane1:before {
+  content: "\e90b";
+}
+
+.icon-bar-graph:before {
+  content: "\e901";
+}
+
+.icon-display:before {
+  content: "\e900";
+}
+
+.icon-screen1:before {
+  content: "\e900";
+}
+
+.icon-monitor1:before {
+  content: "\e900";
+}
+
+.icon-computer:before {
+  content: "\e900";
+}
+
+.icon-desktop1:before {
+  content: "\e900";
+}
+
+.icon-pc1:before {
+  content: "\e900";
+}
+
+.icon-apps:before {
+  content: "\e91c";
+}
+
+.icon-code:before {
+  content: "\e914";
+}
+
+.icon-star:before {
+  content: "\f005";
 }
 
 .icon-twitter:before {
@@ -37,12 +120,12 @@
   content: "\e903";
 }
 
-.icon-instagram1:before {
-  content: "\e901";
+.icon-instagram:before {
+  content: "\e904";
 }
 
 .icon-facebook:before {
-  content: "\e900";
+  content: "\e905";
 }
 
 * {
@@ -76,39 +159,14 @@ body {
 
 .btn-primary {
   color: #fff;
-  background-color: #212330;
-  border-color: #212330;
-  padding: 12px 22px 16px;
+  background-color: #333645;
+  border-color: #333645;
 }
 
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-
-@media (min-width: 1260px) {
-  .container {
-    width: 1200px;
-  }
-}
-
-.row {
-  margin-left: -15px;
-  margin-right: -15px;
+.btn-primary.active, .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  color: #fff;
+  background-color: #22242e;
+  border-color: #191a22;
 }
 
 footer {
@@ -162,6 +220,11 @@ footer .container .footer-row .footer-social a {
   text-align: center;
   margin-right: 10px;
   margin-bottom: 10px;
+  background-color: #212330;
+  font-size: 26px;
+  line-height: 26px;
+  padding: 12px 22px 16px;
+  margin-right: 7px;
 }
 
 @media (max-width: 480px) {
@@ -171,8 +234,8 @@ footer .container .footer-row .footer-social a {
 }
 
 footer .container .footer-row .footer-social span {
-  font-size: 1.6em;
-  text-align: center;
+  position: relative;
+  top: 4px;
 }
 
 footer .container .footer-row .footer-social .footer-image {
@@ -284,6 +347,38 @@ header .inner {
   background-color: #7aa0c4;
 }
 
+header .inner .logo img {
+  max-width: 100%;
+  display: block;
+}
+
+@media (min-width: 1260px) {
+  header .inner .actions .header-btn {
+    display: inline-block !important;
+  }
+}
+
+header .inner .actions .btn {
+  height: 56px;
+  line-height: 46px;
+  font-size: 1.125rem;
+  float: left;
+}
+
+header .inner .actions .btn-it {
+  color: #fff;
+  background-color: #4183d7;
+  border-color: #4183d7;
+}
+
+header .inner .row {
+  padding: 0;
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+  width: 100%;
+}
+
 .newsletter-full-width {
   background-color: #ddd;
 }
@@ -338,34 +433,48 @@ header .inner {
   padding: 50px 0;
 }
 
-.clients-container {
+.newsletter-full-width .media-body a {
+  text-decoration: underline;
+}
+
+.cms-block .section-clients {
   padding-top: 50px;
   padding-bottom: 50px;
-  margin-top: auto;
 }
 
-.clients-container .clients-row {
+.cms-block .section-clients .sliding-clients {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
-.clients-container .item {
+.cms-block .section-clients .sliding-clients .owl-stage {
+  display: flex;
+}
+
+.cms-block .section-clients .sliding-clients .owl-stage .item {
   padding: 0 20px;
   vertical-align: middle;
+  position: relative;
 }
 
-.btn-subscribe {
-  outline: none;
-  height: auto;
-  line-height: 35px;
-  padding: 5px 15px;
-  text-transform: uppercase;
-  font-size: 1.063rem;
-  border-radius: 3px;
-  white-space: normal;
-  color: #fff;
-  background-color: #333645;
-  border-color: #333645;
+.cms-block .section-clients .sliding-clients .owl-stage .item img {
+  max-height: 70px;
+  width: auto !important;
+  max-width: 200px;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+.cms-block .section-clients .sliding-clients .owl-stage .item img:hover {
+  filter: none;
+}
+
+.btn {
   display: inline-block;
   margin-bottom: 0;
   font-weight: 400;
@@ -374,20 +483,46 @@ header .inner {
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn {
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+}
+
+.btn-subscribe {
+  outline: none;
+  color: #fff;
+  background-color: #333645;
+  border-color: #333645;
 }
 
 .twitter:hover {
-  background-color: #00aced;
+  background-color: #00aced !important;
 }
 
 .linkedin:hover {
-  background-color: #0077b5;
+  background-color: #0077b5 !important;
 }
 
 .instagram:hover {
-  background-color: #d93175;
+  background-color: #d93175 !important;
 }
 
 .facebook:hover {
-  background-color: #3b5998;
+  background-color: #3b5998 !important;
 }
