@@ -50,6 +50,7 @@ $color-developercourse:#ce4125;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  display:inline-block;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
@@ -185,6 +186,11 @@ body {
     color: #fff;
     background-color: #333645;
     border-color: #333645;
+}
+
+.btn-default{
+  color: #fff;
+  background-color:#999aa2;
 }
 
 //This includes most default coloured buttons, changing their focus and active states to a different colour. 

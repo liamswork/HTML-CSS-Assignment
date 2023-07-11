@@ -1,14 +1,12 @@
 header{
     .inner{
-        
         padding:20px 0;
         background-color: #fff;
-        //ROW CONTAINER AND CHILDREN/SIBLING SETTINGS
-        .row{
-            display: table;
-            width: 100%;
-            margin: 0;
+        //Target all sibliings within actions
+        .actions *+*{
+            margin-left: 20px;
         }
+
         .row>*{
             @media (max-width: 767px)
             {
@@ -41,7 +39,7 @@ header{
             }
         }
 
-        //.ACTIONS, on mobile view, this will only be the search bar.
+        //.ACTIONS, on mobile view this will only be the search bar.
         .actions{
             float:right;
             padding:7px 0;
@@ -69,21 +67,46 @@ header{
                 line-height: 45px;
             }
         }
-        //Target all sibliings within actions
-        .actions *+*{
-            margin-left: 20px;
-        }
+
 
         .hamburger-box{
             display:block;
+            .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+                width:32px;
+                background-color:#fff;
+            } 
         }
-         .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
-            width:32px;
-            background-color:#fff;
-        } 
+
+
+        .search-form{
+            button{
+                outline: none;
+                padding: 7px 20px 3px;
+                height: 56px;
+                font-size: 1.063rem;
+                border-radius: 0 3px 3px 0;
+                border: none;
+                vertical-align: bottom;
+                background-color: #999aa2;
+                color: #fff;
+            }
+        }
+        //Mobile Search form styles. This is a seperate form entirely from the tablet/pc view search form.
         .search-form-wrapper--mobile>.search-form {
             margin-top: 11px;
             position: relative;
+
+            .form-control{
+                background-color: rgba(0,0,0,.1);
+                outline: 1px solid hsla(0,0%,100%,.2);
+                border: 2px solid rgba(0,0,0,.1);
+                transition: none;
+                width: 100%;
+                padding-right: 40px;
+                display: inline-block; //This allows our icon to sit on top of the form input itself.
+            }
+
+            //Mobile button.
             button {
                 background: none;
                 border: none;
@@ -96,17 +119,9 @@ header{
                 span{
                     font-weight:600;
                 }
+                
             }
-            .form-control{
-                background-color: rgba(0,0,0,.1);
-                outline: 1px solid hsla(0,0%,100%,.2);
-                border: 2px solid rgba(0,0,0,.1);
-                transition: none;
-                width: 100%;
-                padding-right: 40px;
-                display: inline-block; //This allows our icon to sit on top of the form input itself.
 
-            }
         }
 
     }

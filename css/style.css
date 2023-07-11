@@ -23,6 +23,7 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  display: inline-block;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -182,6 +183,11 @@ body {
   color: #fff;
   background-color: #333645;
   border-color: #333645;
+}
+
+.btn-default {
+  color: #fff;
+  background-color: #999aa2;
 }
 
 .btn-primary.active, .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
@@ -374,10 +380,8 @@ header .inner {
   background-color: #fff;
 }
 
-header .inner .row {
-  display: table;
-  width: 100%;
-  margin: 0;
+header .inner .actions * + * {
+  margin-left: 20px;
 }
 
 @media (max-width: 767px) {
@@ -438,22 +442,40 @@ header .inner .actions .btn span:not(.title) {
   line-height: 45px;
 }
 
-header .inner .actions * + * {
-  margin-left: 20px;
-}
-
 header .inner .hamburger-box {
   display: block;
 }
 
-header .inner .hamburger-inner, header .inner .hamburger-inner::before, header .inner .hamburger-inner::after {
+header .inner .hamburger-box .hamburger-inner, header .inner .hamburger-box .hamburger-inner::before, header .inner .hamburger-box .hamburger-inner::after {
   width: 32px;
   background-color: #fff;
+}
+
+header .inner .search-form button {
+  outline: none;
+  padding: 7px 20px 3px;
+  height: 56px;
+  font-size: 1.063rem;
+  border-radius: 0 3px 3px 0;
+  border: none;
+  vertical-align: bottom;
+  background-color: #999aa2;
+  color: #fff;
 }
 
 header .inner .search-form-wrapper--mobile > .search-form {
   margin-top: 11px;
   position: relative;
+}
+
+header .inner .search-form-wrapper--mobile > .search-form .form-control {
+  background-color: rgba(0, 0, 0, 0.1);
+  outline: 1px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  transition: none;
+  width: 100%;
+  padding-right: 40px;
+  display: inline-block;
 }
 
 header .inner .search-form-wrapper--mobile > .search-form button {
@@ -469,16 +491,6 @@ header .inner .search-form-wrapper--mobile > .search-form button {
 
 header .inner .search-form-wrapper--mobile > .search-form button span {
   font-weight: 600;
-}
-
-header .inner .search-form-wrapper--mobile > .search-form .form-control {
-  background-color: rgba(0, 0, 0, 0.1);
-  outline: 1px solid rgba(255, 255, 255, 0.2);
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  transition: none;
-  width: 100%;
-  padding-right: 40px;
-  display: inline-block;
 }
 
 .newsletter-full-width {
@@ -599,6 +611,62 @@ header .inner .search-form-wrapper--mobile > .search-form .form-control {
   flex-direction: row;
 }
 
+.main-navigation .container > ul .software:hover {
+  background-color: #67809f;
+}
+
+.main-navigation .container > ul .software:hover span {
+  color: white;
+}
+
+.main-navigation .container > ul .it:hover {
+  background-color: #4183d7;
+}
+
+.main-navigation .container > ul .it:hover span {
+  color: white;
+}
+
+.main-navigation .container > ul .digital:hover {
+  background-color: #2ecc71;
+}
+
+.main-navigation .container > ul .digital:hover span {
+  color: white;
+}
+
+.main-navigation .container > ul .telecoms:hover {
+  background-color: #d64541;
+}
+
+.main-navigation .container > ul .telecoms:hover span {
+  color: white;
+}
+
+.main-navigation .container > ul .web:hover {
+  background-color: #926fb1;
+}
+
+.main-navigation .container > ul .web:hover span {
+  color: white;
+}
+
+.main-navigation .container > ul .security:hover {
+  background-color: #f62459;
+}
+
+.main-navigation .container > ul .security:hover span {
+  color: white;
+}
+
+.main-navigation .container > ul .developer-course:hover {
+  background-color: #ce4125;
+}
+
+.main-navigation .container > ul .developer-course:hover span {
+  color: white;
+}
+
 .main-navigation .container > ul li {
   flex: 1;
   -webkit-flex: 1;
@@ -624,7 +692,7 @@ header .inner .search-form-wrapper--mobile > .search-form .form-control {
   color: #4183d7;
 }
 
-.main-navigation .container > ul li a .icon-bar-graphs {
+.main-navigation .container > ul li a .icon-bar-graph {
   color: #2ecc71;
 }
 
