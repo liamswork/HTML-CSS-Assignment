@@ -78,8 +78,8 @@ $color-instagram:#d93175;
 .icon-email:before {
   content: "\e919";
 }
-.icon-paperplane1:before {
-  content: "\e90b";
+.icon-bar-graph:before {
+  content: "\e901";
 }
 .icon-bar-graph:before {
   content: "\e901";
@@ -87,7 +87,7 @@ $color-instagram:#d93175;
 .icon-display:before {
   content: "\e900";
 }
-.icon-screen1:before {
+.icon-screen:before {
   content: "\e900";
 }
 .icon-monitor1:before {
@@ -111,6 +111,15 @@ $color-instagram:#d93175;
 .icon-star:before {
   content: "\f005";
 }
+.icon-bars:before {
+  content: "\f0c9";
+}
+.icon-navicon:before {
+  content: "\f0c9";
+}
+.icon-reorder:before {
+  content: "\f0c9";
+}
 .icon-twitter:before {
   content: "\e902";
 }
@@ -123,7 +132,6 @@ $color-instagram:#d93175;
 .icon-facebook:before {
   content: "\e905";
 }
-
 
 *{
     box-sizing: border-box;
@@ -139,6 +147,14 @@ h4{
   font-weight: 400;
 }
 
+a{
+  color: #333645;
+  text-decoration: none;
+}
+
+img{
+  border:0;
+}
 
 body {
   //temporary flex instructions to keep footer at the bottom
@@ -169,5 +185,12 @@ body {
   color: #fff;
   background-color: #22242e;
   border-color: #191a22;
+}
+
+//Form control base settings
+.form-control {
+  height: 47px;
+  padding: 5px 15px;
+  border-color: #ccc;
 }
     

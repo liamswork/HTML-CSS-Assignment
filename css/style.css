@@ -68,8 +68,8 @@
   content: "\e919";
 }
 
-.icon-paperplane1:before {
-  content: "\e90b";
+.icon-bar-graph:before {
+  content: "\e901";
 }
 
 .icon-bar-graph:before {
@@ -80,7 +80,7 @@
   content: "\e900";
 }
 
-.icon-screen1:before {
+.icon-screen:before {
   content: "\e900";
 }
 
@@ -110,6 +110,18 @@
 
 .icon-star:before {
   content: "\f005";
+}
+
+.icon-bars:before {
+  content: "\f0c9";
+}
+
+.icon-navicon:before {
+  content: "\f0c9";
+}
+
+.icon-reorder:before {
+  content: "\f0c9";
 }
 
 .icon-twitter:before {
@@ -145,6 +157,15 @@ h4 {
   font-weight: 400;
 }
 
+a {
+  color: #333645;
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -167,6 +188,12 @@ body {
   color: #fff;
   background-color: #22242e;
   border-color: #191a22;
+}
+
+.form-control {
+  height: 47px;
+  padding: 5px 15px;
+  border-color: #ccc;
 }
 
 footer {
@@ -344,12 +371,47 @@ footer .footer-bottom .license {
 
 header .inner {
   padding: 20px 0;
-  background-color: #7aa0c4;
+  background-color: #fff;
 }
 
-header .inner .logo img {
+header .inner .row {
+  display: table;
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  header .inner .row > * {
+    padding: 0;
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  header .inner .logo-container {
+    display: table;
+    table-layout: fixed;
+  }
+}
+
+header .inner .logo-container .logo img {
   max-width: 100%;
   display: block;
+}
+
+@media (max-width: 991px) {
+  header .inner .mobile {
+    font-size: 32px;
+    margin-left: 15px;
+  }
+}
+
+header .inner .actions {
+  float: right;
+  padding: 7px 0;
 }
 
 @media (min-width: 1260px) {
@@ -371,12 +433,52 @@ header .inner .actions .btn-it {
   border-color: #4183d7;
 }
 
-header .inner .row {
-  padding: 0;
-  display: table-cell;
-  float: none;
-  vertical-align: middle;
+header .inner .actions .btn span:not(.title) {
+  font-size: 1.3rem;
+  line-height: 45px;
+}
+
+header .inner .actions * + * {
+  margin-left: 20px;
+}
+
+header .inner .hamburger-box {
+  display: block;
+}
+
+header .inner .hamburger-inner, header .inner .hamburger-inner::before, header .inner .hamburger-inner::after {
+  width: 32px;
+  background-color: #fff;
+}
+
+header .inner .search-form-wrapper--mobile > .search-form {
+  margin-top: 11px;
+  position: relative;
+}
+
+header .inner .search-form-wrapper--mobile > .search-form button {
+  background: none;
+  border: none;
+  color: #333645;
+  position: absolute;
+  right: 5px;
+  line-height: 47px;
+  font-size: 32px;
+  outline: none;
+}
+
+header .inner .search-form-wrapper--mobile > .search-form button span {
+  font-weight: 600;
+}
+
+header .inner .search-form-wrapper--mobile > .search-form .form-control {
+  background-color: rgba(0, 0, 0, 0.1);
+  outline: 1px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  transition: none;
   width: 100%;
+  padding-right: 40px;
+  display: inline-block;
 }
 
 .newsletter-full-width {
