@@ -1,0 +1,71 @@
+.main-navigation {
+    background-color: #333645;
+    position: relative;
+    //The UL is the flex row container of boxes
+    .container>ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        //The LI is the contents within the row, containing the small boxes, and subsections when hover.
+        li{
+            flex: 1;
+            -webkit-flex: 1;
+            text-align: center;
+            a{
+                position: relative;
+                display: block;
+                color: #fff;
+                padding: 19px 0 18px;
+                text-transform: uppercase;
+                font-size: 1.125rem;
+                text-decoration: none;
+                line-height: 1;
+
+                //Need to review SASS to stop this repetitve css. 
+                //Span colours
+                .icon-apps{
+                    color:$color-bespokesoftware;
+                }
+                .icon-display{
+                    color:$color-itsupport;
+                }
+                .icon-bar-graphs{
+                    color:$color-digitalmarketing;
+                }
+                .icon-phone_in_talk{
+                    color:$color-telecomservices;
+                }
+                .icon-code{
+                    color:$color-webdesign;
+                }
+                .icon-security{
+                    color:$color-cybersecurity;
+                }
+                .icon-school{
+                    color:$color-developercourse;
+                    >a:hover{
+
+                    }
+                }
+            }
+            //subsection divs, default to display none.
+            div {
+                margin: 0;
+                display: none;
+                background-color: #1d1f28;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                min-width: 100%;
+                z-index: 10;
+                padding-top: 50px;
+                padding-bottom: 50px;
+
+
+            }
+
+        }
+    }
+}

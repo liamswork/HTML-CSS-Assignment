@@ -576,6 +576,87 @@ header .inner .search-form-wrapper--mobile > .search-form .form-control {
   filter: none;
 }
 
+.banner-container {
+  width: auto;
+}
+
+.banner-container .banner {
+  background: linear-gradient(270deg, transparent 25%, #000), url(../img/home-YLei.png);
+  background-size: cover;
+  height: 550px;
+}
+
+.main-navigation {
+  background-color: #333645;
+  position: relative;
+}
+
+.main-navigation .container > ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-navigation .container > ul li {
+  flex: 1;
+  -webkit-flex: 1;
+  text-align: center;
+}
+
+.main-navigation .container > ul li a {
+  position: relative;
+  display: block;
+  color: #fff;
+  padding: 19px 0 18px;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.main-navigation .container > ul li a .icon-apps {
+  color: #67809f;
+}
+
+.main-navigation .container > ul li a .icon-display {
+  color: #4183d7;
+}
+
+.main-navigation .container > ul li a .icon-bar-graphs {
+  color: #2ecc71;
+}
+
+.main-navigation .container > ul li a .icon-phone_in_talk {
+  color: #d64541;
+}
+
+.main-navigation .container > ul li a .icon-code {
+  color: #926fb1;
+}
+
+.main-navigation .container > ul li a .icon-security {
+  color: #f62459;
+}
+
+.main-navigation .container > ul li a .icon-school {
+  color: #ce4125;
+}
+
+.main-navigation .container > ul li div {
+  margin: 0;
+  display: none;
+  background-color: #1d1f28;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 100%;
+  z-index: 10;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .btn {
   display: inline-block;
   margin-bottom: 0;

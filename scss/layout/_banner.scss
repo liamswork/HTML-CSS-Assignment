@@ -1,0 +1,9 @@
+//home-YLei.png Is the banner image we will use.
+.banner-container{
+    width:auto;
+    .banner{
+        background:linear-gradient(270deg,transparent 25%,#000), url(../img/home-YLei.png);
+        background-size: cover;
+        height:550px;
+    }
+}
