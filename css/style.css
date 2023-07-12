@@ -380,7 +380,7 @@ header .inner {
   background-color: #fff;
 }
 
-header .inner .actions * + * {
+header .inner .actions > * + * {
   margin-left: 20px;
 }
 
@@ -437,6 +437,10 @@ header .inner .actions .btn-it {
   border-color: #4183d7;
 }
 
+header .inner .actions .btn-default .icon-paperplane {
+  margin-right: 5px;
+}
+
 header .inner .actions .btn span:not(.title) {
   font-size: 1.3rem;
   line-height: 45px;
@@ -444,11 +448,35 @@ header .inner .actions .btn span:not(.title) {
 
 header .inner .hamburger-box {
   display: block;
+  width: 32px;
 }
 
 header .inner .hamburger-box .hamburger-inner, header .inner .hamburger-box .hamburger-inner::before, header .inner .hamburger-box .hamburger-inner::after {
+  border-radius: 0px;
   width: 32px;
   background-color: #fff;
+}
+
+header .inner .search-form .form-control {
+  width: 300px;
+  height: 56px;
+  display: none;
+}
+
+@media (min-width: 1260px) {
+  header .inner .search-form .form-control {
+    display: inline-block !important;
+    border-radius: 0;
+    width: 240px;
+  }
+}
+
+@media (max-width: 991px) {
+  header .inner .search-form .form-control {
+    display: inline-block !important;
+    border-radius: 0;
+    width: 174px;
+  }
 }
 
 header .inner .search-form button {
@@ -461,6 +489,12 @@ header .inner .search-form button {
   vertical-align: bottom;
   background-color: #999aa2;
   color: #fff;
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  header .inner .search-form button {
+    border-radius: 3px;
+  }
 }
 
 header .inner .search-form-wrapper--mobile > .search-form {
