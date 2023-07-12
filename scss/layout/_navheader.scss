@@ -66,6 +66,11 @@
                 font-size: 1.125rem;
                 text-decoration: none;
                 line-height: 1;
+                small{
+                        display: block;
+                        font-size: .625rem;
+                        padding-bottom: 1px;
+                }
 
                 //Need to review SASS to stop this repetitve css. 
                 //Span colours
