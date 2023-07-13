@@ -8,49 +8,9 @@
         list-style: none;
         display: flex;
         flex-direction: row;
-        //This is a default red background when items are hovered over. Find a better way to do this.
-        .software:hover{
-            background-color:$color-bespokesoftware;
-            span{
-                color:white;
-            }
-        }
-         .it:hover{
-            background-color:$color-itsupport;
-            span{
-                color:white;
-            }
-         }
-         .digital:hover{
-            background-color:$color-digitalmarketing;
-            span{
-                color:white;
-            }
-         }
-         .telecoms:hover{
-            background-color:$color-telecomservices;
-            span{
-                color:white;
-            }
-         }
-         .web:hover{
-            background-color:$color-webdesign;
-            span{
-                color:white;
-            }
-         }
-         .security:hover{
-            background-color:$color-cybersecurity;
-            span{
-                color:white;
-            }
-         }
-          .developer-course:hover{
-            background-color:$color-developercourse;
-            span{
-                color:white;
-            }
-        }
+        //Nav Item Hover mixin.
+
+
         //The LI is the contents within the row, containing the small boxes, and subsections when hover.
         li{
             flex: 1;
@@ -108,8 +68,11 @@
                 z-index: 10;
                 padding-top: 50px;
                 padding-bottom: 50px;
+            }
 
-
+            //Display subsections on parent item hover
+            &:hover>div {
+                display: block;
             }
 
         }

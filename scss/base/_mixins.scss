@@ -1,0 +1,14 @@
+//NavHeader colour themes
+@mixin NavHoverColor($theme){
+    background-color: $theme;
+}
+
+
+/*
+         .telecoms:hover{
+            background-color:$color-telecomservices;
+            span{
+                color:white;
+            }
+         }
+*/

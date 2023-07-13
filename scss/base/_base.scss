@@ -1,5 +1,6 @@
 //BORDER RADIUS 50% FOR ROUNDED ICON BACKGROUNDS FOR CARDS IN CENTER OF PAGE.
 //CHAT ICON NOT INCLUDED IN OUR CURRENT ICON PACK, SEEMS TO BE PULLED FROM W3.
+//Create a function or mixin to take include and create hover/active/focus states on buttons that darken the original color.
 
 
 ////////////////BASE, DEFAULTS, FONTS, VARIABLES//////////////
@@ -20,6 +21,16 @@ $color-telecomservices:#d64541;
 $color-webdesign:#926fb1;
 $color-cybersecurity:#f62459;
 $color-developercourse:#ce4125;
+
+$color-themes:(
+  software:   #67809f,
+  it:           #4183d7,
+  digital:      #2ecc71,
+  telecoms:     #d64541,
+  web:          #926fb1,
+  security:     #f62459,
+  developer-course:       #ce4125
+);
 
 @font-face {
   font-family: 'icomoon';

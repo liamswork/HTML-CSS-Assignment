@@ -6,7 +6,9 @@ header{
         .actions>*+*{
             margin-left: 20px;
         }
-
+        .row{
+            margin:0;
+        }
         .row>*{
             @media (max-width: 767px)
             {
@@ -163,6 +165,11 @@ header{
                 line-height: 47px;
                 font-size: 32px;
                 outline: none;
+                &.active, &:active, &:focus, &:hover { //Create a darken function for buttons for future.
+                    background-color: #7e57a0;
+                    border-color: #735093;
+                }
+                //Icon
                 span{
                     font-weight:600;
                 }

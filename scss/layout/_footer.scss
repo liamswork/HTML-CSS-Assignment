@@ -14,20 +14,16 @@ footer{
 
     //Footer Container ---------------------
     .container{
-        padding-left:15px;
-        padding-right:15px;
-        margin-left: auto;
-        margin-right: auto;
-    
         //Footer Row Container ---------------------
         .footer-row{
             display:flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            @media (min-width: 1260px){
+                flex-wrap:nowrap;
+            }
             //FOOTER SOCIAL BOX
             .footer-social{
-                width:300px;
-                
                 @media (max-width: 767px){
                     width:100%
                 }
@@ -47,8 +43,8 @@ footer{
                 padding: 12px 22px 16px;
                 margin-right: 7px;
   
-                    @media (max-width: 480px){
-                        width:35%; //Specifcally 35%, will never display 3 on a line on small screens.
+                @media (max-width: 480px){
+                    width:35%; //Specifcally 35%, will never display 3 on a line on small screens.
                     }
                 }
 
@@ -125,14 +121,24 @@ footer{
 
     //FOOTER BOTTOM BOX
     .footer-bottom{
+        @media (min-width:768px){
+            display:flex;
+        }
         ul{
+            display:flex;
+            flex-wrap:wrap;
             list-style: none;
             padding:0;
+
+
         }
         a{
             color:#fff;
             text-decoration: none;
+            &:hover{text-decoration: underline;}
         }
+        font-size: .8125rem;
+        padding-top:10px;
         display:flex;
         text-decoration: none;
         color:#fff;
