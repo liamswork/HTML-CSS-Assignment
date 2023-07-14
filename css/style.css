@@ -908,7 +908,6 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
 }
 
 .main-navigation .container > ul li div {
-  background-color: inherit;
   margin: 0;
   display: none;
   position: absolute;
@@ -918,6 +917,41 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
   z-index: 10;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.main-navigation .container > ul li div.software {
+  background-color: #526781;
+  color: #fff;
+}
+
+.main-navigation .container > ul li div.it {
+  background-color: #286abd;
+  color: #fff;
+}
+
+.main-navigation .container > ul li div.digital {
+  background-color: #25a25a;
+  color: #fff;
+}
+
+.main-navigation .container > ul li div.telecoms {
+  background-color: #bc2c28;
+  color: #fff;
+}
+
+.main-navigation .container > ul li div.web {
+  background-color: #79539a;
+  color: #fff;
+}
+
+.main-navigation .container > ul li div.security {
+  background-color: #de093f;
+  color: #fff;
+}
+
+.main-navigation .container > ul li div.developer-course {
+  background-color: #a3331d;
+  color: #fff;
 }
 
 .main-navigation .container > ul li:hover > div {

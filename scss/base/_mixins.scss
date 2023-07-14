@@ -8,10 +8,20 @@
     }
 }
 
-@mixin class-colors-font($relationship : parent){
+@mixin class-colors-font{
     @each $class, $color in $color-themes {
         &.#{$class} {
             color: $color;
         }
     }
 }
+@mixin class-colors2($color-type: primary, $font-color: null) {
+    $colors: map-get($color-themes2, $color-type);
+  
+    @each $class, $color in $colors {
+      &.#{$class} {
+        background-color: $color;
+        color: $font-color;
+      }
+    }
+  }

@@ -41,7 +41,7 @@
             //subsection divs, default to display none.
             div {
                 //Need to darken this
-                background-color:inherit;
+                @include class-colors2(darken,#fff);
                 margin: 0;
                 display: none;
                 position: absolute;
