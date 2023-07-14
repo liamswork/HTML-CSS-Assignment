@@ -907,7 +907,7 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
   line-height: 1;
 }
 
-.main-navigation .container > ul li div {
+.main-navigation .container > ul li .sub-menu-banner {
   margin: 0;
   display: none;
   position: absolute;
@@ -919,43 +919,68 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
   padding-bottom: 50px;
 }
 
-.main-navigation .container > ul li div.software {
+.main-navigation .container > ul li .sub-menu-banner.software {
   background-color: #526781;
   color: #fff;
 }
 
-.main-navigation .container > ul li div.it {
+.main-navigation .container > ul li .sub-menu-banner.it {
   background-color: #286abd;
   color: #fff;
 }
 
-.main-navigation .container > ul li div.digital {
+.main-navigation .container > ul li .sub-menu-banner.digital {
   background-color: #25a25a;
   color: #fff;
 }
 
-.main-navigation .container > ul li div.telecoms {
+.main-navigation .container > ul li .sub-menu-banner.telecoms {
   background-color: #bc2c28;
   color: #fff;
 }
 
-.main-navigation .container > ul li div.web {
+.main-navigation .container > ul li .sub-menu-banner.web {
   background-color: #79539a;
   color: #fff;
 }
 
-.main-navigation .container > ul li div.security {
+.main-navigation .container > ul li .sub-menu-banner.security {
   background-color: #de093f;
   color: #fff;
 }
 
-.main-navigation .container > ul li div.developer-course {
+.main-navigation .container > ul li .sub-menu-banner.developer-course {
   background-color: #a3331d;
   color: #fff;
 }
 
-.main-navigation .container > ul li:hover > div {
+.main-navigation .container > ul li .sub-menu-banner ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: -15px;
+  list-style: none;
+  text-align: left;
+  padding: 0px;
+}
+
+.main-navigation .container > ul li .sub-menu-banner ul .sub-menu-banner-title {
   display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.main-navigation .container > ul li .sub-menu-banner ul .nav-item--sub-menu {
+  width: 33%;
+  margin-top: 15px;
+}
+
+@media (min-width: 992px) {
+  .main-navigation .container > ul li:hover > div {
+    display: block;
+  }
 }
 
 .container .cms-block a:not(.btn), .container .cms-block strong {
