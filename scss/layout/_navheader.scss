@@ -1,25 +1,32 @@
 .main-navigation {
     background-color: #333645;
     position: relative;
-    //The UL is the flex row container of boxes
+
+    //Colour any spans based on their class. We will overwrite this on hover.
+    span{
+        @include class-colors-font;
+    }
+    
     .container > ul {
         padding: 0;
         margin: 0;
         list-style: none;
         display: flex;
         flex-direction: row;
-        //Nav Item Hover mixin, icons turned to white.
-        li:hover{
-            @include class-colors(#fff);
-        }
 
         //Nav boxes are all li elements.
         li{
-
             flex: 1;
             -webkit-flex: 1;
             text-align: center;
-            
+            //When nav boxes are hovered over, style according to class name.
+            &:hover{
+                @include class-colors(#fff);
+                color:inherit;
+                span{
+                    color:#fff;
+                }
+            }
             a{
                 position: relative;
                 display: block;
@@ -29,18 +36,14 @@
                 font-size: 1.125rem;
                 text-decoration: none;
                 line-height: 1;
-                small{
-                    display: block;
-                    font-size: .625rem;
-                    padding-bottom: 1px;
-                }
 
             }
             //subsection divs, default to display none.
             div {
+                //Need to darken this
+                background-color:inherit;
                 margin: 0;
                 display: none;
-                background-color: #1d1f28;
                 position: absolute;
                 top: 100%;
                 left: 0;

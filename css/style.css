@@ -225,6 +225,12 @@ body {
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 
+small {
+  display: block;
+  font-size: .625rem;
+  padding-bottom: 1px;
+}
+
 footer {
   font-family: Poppins;
   background-color: #323544;
@@ -744,7 +750,7 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
 .banner .banner-box .item .container-content {
   text-align: center;
   position: relative;
-  z-index: 10;
+  z-index: 6;
 }
 
 @media (min-width: 991px) {
@@ -805,12 +811,50 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
   position: relative;
 }
 
+.main-navigation span.software {
+  color: #67809f;
+}
+
+.main-navigation span.it {
+  color: #4183d7;
+}
+
+.main-navigation span.digital {
+  color: #2ecc71;
+}
+
+.main-navigation span.telecoms {
+  color: #d64541;
+}
+
+.main-navigation span.web {
+  color: #926fb1;
+}
+
+.main-navigation span.security {
+  color: #f62459;
+}
+
+.main-navigation span.developer-course {
+  color: #ce4125;
+}
+
 .main-navigation .container > ul {
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
   flex-direction: row;
+}
+
+.main-navigation .container > ul li {
+  flex: 1;
+  -webkit-flex: 1;
+  text-align: center;
+}
+
+.main-navigation .container > ul li:hover {
+  color: inherit;
 }
 
 .main-navigation .container > ul li:hover.software {
@@ -848,10 +892,8 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
   color: #fff;
 }
 
-.main-navigation .container > ul li {
-  flex: 1;
-  -webkit-flex: 1;
-  text-align: center;
+.main-navigation .container > ul li:hover span {
+  color: #fff;
 }
 
 .main-navigation .container > ul li a {
@@ -865,16 +907,10 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
   line-height: 1;
 }
 
-.main-navigation .container > ul li a small {
-  display: block;
-  font-size: .625rem;
-  padding-bottom: 1px;
-}
-
 .main-navigation .container > ul li div {
+  background-color: inherit;
   margin: 0;
   display: none;
-  background-color: #1d1f28;
   position: absolute;
   top: 100%;
   left: 0;

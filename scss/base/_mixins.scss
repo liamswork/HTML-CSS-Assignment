@@ -7,3 +7,11 @@
         }
     }
 }
+
+@mixin class-colors-font($relationship : parent){
+    @each $class, $color in $color-themes {
+        &.#{$class} {
+            color: $color;
+        }
+    }
+}

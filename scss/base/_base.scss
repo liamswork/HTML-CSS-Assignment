@@ -13,24 +13,38 @@ $color-facebook:#3b5998;
 $color-linkedin:#0077b5;
 $color-twitter:#00aced;
 $color-instagram:#d93175;
-//Services colours
-$color-bespokesoftware:#67809f;
-$color-itsupport:#4183d7;
-$color-digitalmarketing:#2ecc71;
-$color-telecomservices:#d64541;
-$color-webdesign:#926fb1;
-$color-cybersecurity:#f62459;
-$color-developercourse:#ce4125;
 
-$color-themes:(
-  software:   #67809f,
-  it:           #4183d7,
-  digital:      #2ecc71,
-  telecoms:     #d64541,
-  web:          #926fb1,
-  security:     #f62459,
-  developer-course:       #ce4125
+$color-themes: (
+    software:         #67809f,
+    it:               #4183d7,
+    digital:          #2ecc71,
+    telecoms:         #d64541,
+    web:              #926fb1,
+    security:         #f62459,
+    developer-course: #ce4125
 );
+
+$color-themes2: (
+  primary: (
+    software:         #67809f,
+    it:               #4183d7,
+    digital:          #2ecc71,
+    telecoms:         #d64541,
+    web:              #926fb1,
+    security:         #f62459,
+    developer-course: #ce4125
+  ),
+  darken: (
+    software:         #526781,
+    it:               #286abd,
+    digital:          #25a25a,
+    telecoms:         #bc2c28,
+    web:              #79539a,
+    security:         #de093f,
+    developer-course: #a3331d
+  )
+);
+
 
 @font-face {
   font-family: 'icomoon';
@@ -237,5 +251,11 @@ body {
   border-radius: 3px;
   padding: 30px;
   box-shadow: 0 3px 35px rgba(0,0,0,.1);
+}
+
+small{
+  display: block;
+  font-size: .625rem;
+  padding-bottom: 1px;
 }
     
