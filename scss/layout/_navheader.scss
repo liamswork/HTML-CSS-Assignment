@@ -5,6 +5,15 @@
     //Colour any spans based on their class. We will overwrite this on hover.
     span{
         @include class-colors-font;
+        font-size:1.3rem;
+    }
+
+    .link-icon-container {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            min-width: 35px;
+
     }
     
     .container > ul {
@@ -53,7 +62,7 @@
                 z-index: 10;
                 padding-top: 50px;
                 padding-bottom: 50px;
-
+                
                 ul{
                     display: flex;
                     flex-wrap: wrap;
@@ -62,6 +71,11 @@
                     list-style: none;
                     text-align: left;
                     padding:0px;
+                    li{
+                        display:block;
+                        flex:none;
+                        text-align: start;
+                    }
 
                     .sub-menu-banner-title{
                         display: block;
@@ -73,6 +87,18 @@
                     .nav-item--sub-menu{
                         width: 33%;
                         margin-top: 15px;
+                    }
+
+                    a{
+                        color: #fff;
+                        line-height: 1.5rem;
+                        padding: 0.625rem 0.938rem 0.625rem 0;
+                        display: flex;
+                        align-items: center;
+                        .link-text{
+                            font-size: 1.1em;
+                        }
+
                     }
                 }
             }
