@@ -2,21 +2,24 @@
     background-color: #333645;
     position: relative;
     //The UL is the flex row container of boxes
-    .container>ul {
+    .container > ul {
         padding: 0;
         margin: 0;
         list-style: none;
         display: flex;
         flex-direction: row;
-        //Nav Item Hover mixin.
+        //Nav Item Hover mixin, icons turned to white.
+        li:hover{
+            @include class-colors(#fff);
+        }
 
-
-        //The LI is the contents within the row, containing the small boxes, and subsections when hover.
+        //Nav boxes are all li elements.
         li{
+
             flex: 1;
             -webkit-flex: 1;
             text-align: center;
-
+            
             a{
                 position: relative;
                 display: block;
@@ -27,34 +30,11 @@
                 text-decoration: none;
                 line-height: 1;
                 small{
-                        display: block;
-                        font-size: .625rem;
-                        padding-bottom: 1px;
+                    display: block;
+                    font-size: .625rem;
+                    padding-bottom: 1px;
                 }
 
-                //Need to review SASS to stop this repetitve css. 
-                //Span colours
-                .icon-apps{
-                    color:$color-bespokesoftware;
-                }
-                .icon-display{
-                    color:$color-itsupport;
-                }
-                .icon-bar-graph{
-                    color:$color-digitalmarketing;
-                }
-                .icon-phone_in_talk{
-                    color:$color-telecomservices;
-                }
-                .icon-code{
-                    color:$color-webdesign;
-                }
-                .icon-security{
-                    color:$color-cybersecurity;
-                }
-                .icon-school{
-                    color:$color-developercourse;
-                }
             }
             //subsection divs, default to display none.
             div {
