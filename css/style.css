@@ -1590,6 +1590,26 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
   font-style: normal;
 }
 
+.bar {
+  padding-top: 50px;
+}
+
+.bar .headings-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bar a:not(.btn), .bar strong:not(.btn) {
+  font-weight: 600;
+  color: #333645;
+}
+
+@media (min-width: 768px) and (max-width: 1259px) {
+  .article-list .row > :last-child {
+    display: none;
+  }
+}
+
 .btn {
   display: inline-block;
   margin-bottom: 0;
