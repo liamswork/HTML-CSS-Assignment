@@ -13,6 +13,8 @@ $color-facebook:#3b5998;
 $color-linkedin:#0077b5;
 $color-twitter:#00aced;
 $color-instagram:#d93175;
+$color-google:#4387f6;
+$color-trustpilot:#00b67b;
 
 
 $color-themes: (
@@ -404,8 +406,10 @@ $color-themes: (
 
 
 .clearfix{
-  content: " ";
-  display: table;
+  ::before, ::after{
+    content: " ";
+    display: table;
+  }
 }
 
 *{
@@ -461,8 +465,8 @@ body {
 }
 
 .section{
-  margin-top:50px;
-  margin-bottom:50px;
+  padding-top:50px;
+  padding-bottom:50px;
 }
 
 .block {
@@ -477,5 +481,10 @@ small{
   display: block;
   font-size: .625rem;
   padding-bottom: 1px;
+}
+
+p{
+  line-height: 1.875rem;
+  margin-bottom: 25px;
 }
     
