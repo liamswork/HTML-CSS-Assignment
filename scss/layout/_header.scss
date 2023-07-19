@@ -90,7 +90,13 @@ header{
             }
         }
 
-
+        //Hamburger section//////////////
+        button.hamburger{
+            &:hover{
+                background-color:darken($color-primary, 10%);
+                opacity:1; //overwrite hamburger opacity of 0.7.
+            }
+        }
         .hamburger-box{
             display:block;
             width:32px;
@@ -100,8 +106,10 @@ header{
                 background-color:#fff;
             } 
         }
+        ////////////////////////////////
 
 
+        //Large screen search bar///////
         .search-form{
             display:flex;
             flex-direction:row;
@@ -130,7 +138,9 @@ header{
                 vertical-align: bottom;
                 background-color: #999aa2;
                 color: #fff;
-
+                &:hover{
+                    background-color: darken(#999aa2,10%);
+                }
                 .icon-search{
                     font-size:32px;
                 }
@@ -140,6 +150,8 @@ header{
                 }
             }
         }
+        ////////////////////////////////
+        
         //Mobile Search form styles. This is a seperate form entirely from the tablet/pc view search form.
         .search-form-wrapper--mobile>.search-form {
             margin-top: 11px;
@@ -165,17 +177,13 @@ header{
                 line-height: 47px;
                 font-size: 32px;
                 outline: none;
-                &.active, &:active, &:focus, &:hover { //Create a darken function for buttons for future.
 
-                }
                 //Icon
                 span{
                     font-weight:600;
                 }
-                
             }
-
         }
-
+        ////////////////////////////////
     }
 }

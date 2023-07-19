@@ -4,7 +4,7 @@
     
     //Colour any spans based on their class. We will overwrite this on hover.
     span{
-        @include class-colors-font;
+        //@include class-colors-font;
         font-size:1.3rem;
     }
 
@@ -13,7 +13,6 @@
             justify-content: left;
             align-items: center;
             min-width: 35px;
-
     }
     
     .container > ul {
@@ -24,20 +23,21 @@
         flex-direction: row;
 
         //Nav boxes are all li elements.
-        li{
+        //Specifically targeting them like this avoids
+        //disturbing the list within subsections.
+        li:not(.nav-item--sub-menu){
             flex: 1;
             -webkit-flex: 1;
             text-align: center;
 
             //When nav boxes are hovered over, style according to class name.
             &:hover{
-                @include class-colors(primary,#fff);
                 color:inherit;
                 span{
                     color:#fff;
                 }
                 &>a::before{
-                    @include triangleShape('down',red);
+                    @include triangleShape;
                 }
             }
 
@@ -56,7 +56,7 @@
             //subsection divs, default to display none.
             .sub-menu-banner{
                 //Pull from the darken colour palette, based on this divs class.
-                @include class-colors(darken,#fff);
+                //@include class-colors(darken,#fff);
                 margin: 0;
                 display: none;
                 position: absolute;
@@ -82,6 +82,7 @@
                     }
 
                     .sub-menu-banner-title{
+                        color:#fff;
                         display: block;
                         width:100%;
                         margin-bottom: 10px;
@@ -110,9 +111,7 @@
             //Display subsections on parent item hover
             &:hover>div {
                 @media (min-width:992px){
-                
                         display: block;
-                
                 }
             }
 

@@ -1,3 +1,5 @@
+@include service-colors;
+
 //Our Services container structure.
 .container{
     .cms-block{
@@ -6,6 +8,7 @@
             font-weight: 600;
             color: #333645;
         }
+
         .service-list{
             margin-top: 20px;
             .block {
@@ -18,30 +21,25 @@
                 transition: .5s ease;
 
                 &:hover{
-                    @include class-colors(primary, #fff);
-                    .icon{
-                        background-color: #fff;
-                        span{
-                            @include class-colors-font;
-                        }
+                    @include levitate;
+                    .h2, .p{
+                        color:white;
                     }
                 }
 
                 > span{
                     display:block;
-                    @include class-colors;
                 }
 
                 .icon{
                     height: 65px;
                     width: 65px;
                     margin: 0 auto 17px;
-                    background-color: #333645;
                     color: #fff;
                     border-radius: 50%;
                     font-size: 2rem;
                     line-height: 62px;
-                    @include class-colors(primary, #fff);
+                    //@include class-colors(primary, #fff);
                 }
 
                 .h2{
@@ -55,8 +53,6 @@
 
                 .btn{
                     color: #fff;
-                    background-color: #2ecc71;
-                    border-color: #2ecc71;
                 }
 
 

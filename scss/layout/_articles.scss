@@ -14,7 +14,14 @@
 
 //Article section
 .article-list{
-    .item .block {
+    .item{
+        position:relative;
+        top:0;
+        transition: 0.5s ease;
+        &:hover{
+            @include levitate;
+        }
+    .block {
         h3 {
             font-size: 1rem;
             line-height: 1.5rem;
@@ -23,7 +30,7 @@
             }
         }
         a{
-            color:$color-article;
+            color:white;
         }
 
         p{
@@ -68,6 +75,7 @@
                 }
             }
         }
+    }
 
         .btn-web{
         color: #fff;

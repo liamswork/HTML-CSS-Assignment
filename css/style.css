@@ -10,12 +10,9 @@
 @font-face {
   font-family: 'Poppins';
   src: url("../fonts/poppins-v15-latin-regular.woff2") format("woff2"), url("../fonts/poppins-v15-latin-600italic.woff2") format("woff2");
-  /* Add more font formats if available */
-  /* Add additional font properties if desired */
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
@@ -24,7 +21,6 @@
   text-transform: none;
   line-height: 1;
   display: inline-block;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -816,6 +812,11 @@ header .inner .actions .btn span:not(.title) {
   line-height: 45px;
 }
 
+header .inner button.hamburger:hover {
+  background-color: #1d1f28;
+  opacity: 1;
+}
+
 header .inner .hamburger-box {
   display: block;
   width: 32px;
@@ -864,6 +865,10 @@ header .inner .search-form button {
   vertical-align: bottom;
   background-color: #999aa2;
   color: #fff;
+}
+
+header .inner .search-form button:hover {
+  background-color: #7e808a;
 }
 
 header .inner .search-form button .icon-search {
@@ -1125,34 +1130,6 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
   font-size: 1.3rem;
 }
 
-.main-navigation span.software {
-  color: #67809f;
-}
-
-.main-navigation span.it {
-  color: #4183d7;
-}
-
-.main-navigation span.digital {
-  color: #2ecc71;
-}
-
-.main-navigation span.telecoms {
-  color: #d64541;
-}
-
-.main-navigation span.web {
-  color: #926fb1;
-}
-
-.main-navigation span.security {
-  color: #f62459;
-}
-
-.main-navigation span.developer-course {
-  color: #ce4125;
-}
-
 .main-navigation .link-icon-container {
   display: flex;
   justify-content: left;
@@ -1168,56 +1145,21 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
   flex-direction: row;
 }
 
-.main-navigation .container > ul li {
+.main-navigation .container > ul li:not(.nav-item--sub-menu) {
   flex: 1;
   -webkit-flex: 1;
   text-align: center;
 }
 
-.main-navigation .container > ul li:hover {
+.main-navigation .container > ul li:not(.nav-item--sub-menu):hover {
   color: inherit;
 }
 
-.main-navigation .container > ul li:hover.software {
-  background-color: #67809f;
+.main-navigation .container > ul li:not(.nav-item--sub-menu):hover span {
   color: #fff;
 }
 
-.main-navigation .container > ul li:hover.it {
-  background-color: #4183d7;
-  color: #fff;
-}
-
-.main-navigation .container > ul li:hover.digital {
-  background-color: #2ecc71;
-  color: #fff;
-}
-
-.main-navigation .container > ul li:hover.telecoms {
-  background-color: #d64541;
-  color: #fff;
-}
-
-.main-navigation .container > ul li:hover.web {
-  background-color: #926fb1;
-  color: #fff;
-}
-
-.main-navigation .container > ul li:hover.security {
-  background-color: #f62459;
-  color: #fff;
-}
-
-.main-navigation .container > ul li:hover.developer-course {
-  background-color: #ce4125;
-  color: #fff;
-}
-
-.main-navigation .container > ul li:hover span {
-  color: #fff;
-}
-
-.main-navigation .container > ul li:hover > a::before {
+.main-navigation .container > ul li:not(.nav-item--sub-menu):hover > a::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -1228,10 +1170,16 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
   height: 0;
   border-color: #007bff transparent transparent;
   border-style: solid;
-  border-width: 35px 83.5px 0;
+  border-width: 35px 81px 0;
 }
 
-.main-navigation .container > ul li a {
+@media (max-width: 1260px) {
+  .main-navigation .container > ul li:not(.nav-item--sub-menu):hover > a::before {
+    border-width: 35px 67px 0;
+  }
+}
+
+.main-navigation .container > ul li:not(.nav-item--sub-menu) a {
   position: relative;
   display: block;
   color: #fff;
@@ -1242,7 +1190,7 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
   line-height: 1;
 }
 
-.main-navigation .container > ul li .sub-menu-banner {
+.main-navigation .container > ul li:not(.nav-item--sub-menu) .sub-menu-banner {
   margin: 0;
   display: none;
   position: absolute;
@@ -1254,42 +1202,7 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
   padding-bottom: 50px;
 }
 
-.main-navigation .container > ul li .sub-menu-banner.software {
-  background-color: #526781;
-  color: #fff;
-}
-
-.main-navigation .container > ul li .sub-menu-banner.it {
-  background-color: #286abd;
-  color: #fff;
-}
-
-.main-navigation .container > ul li .sub-menu-banner.digital {
-  background-color: #25a25a;
-  color: #fff;
-}
-
-.main-navigation .container > ul li .sub-menu-banner.telecoms {
-  background-color: #bc2c28;
-  color: #fff;
-}
-
-.main-navigation .container > ul li .sub-menu-banner.web {
-  background-color: #79539a;
-  color: #fff;
-}
-
-.main-navigation .container > ul li .sub-menu-banner.security {
-  background-color: #de093f;
-  color: #fff;
-}
-
-.main-navigation .container > ul li .sub-menu-banner.developer-course {
-  background-color: #a3331d;
-  color: #fff;
-}
-
-.main-navigation .container > ul li .sub-menu-banner ul {
+.main-navigation .container > ul li:not(.nav-item--sub-menu) .sub-menu-banner ul {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1299,13 +1212,14 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
   padding: 0px;
 }
 
-.main-navigation .container > ul li .sub-menu-banner ul li {
+.main-navigation .container > ul li:not(.nav-item--sub-menu) .sub-menu-banner ul li {
   display: block;
   flex: none;
   text-align: start;
 }
 
-.main-navigation .container > ul li .sub-menu-banner ul .sub-menu-banner-title {
+.main-navigation .container > ul li:not(.nav-item--sub-menu) .sub-menu-banner ul .sub-menu-banner-title {
+  color: #fff;
   display: block;
   width: 100%;
   margin-bottom: 10px;
@@ -1313,12 +1227,12 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
   font-weight: 500;
 }
 
-.main-navigation .container > ul li .sub-menu-banner ul .nav-item--sub-menu {
+.main-navigation .container > ul li:not(.nav-item--sub-menu) .sub-menu-banner ul .nav-item--sub-menu {
   width: 33%;
   margin-top: 15px;
 }
 
-.main-navigation .container > ul li .sub-menu-banner ul a {
+.main-navigation .container > ul li:not(.nav-item--sub-menu) .sub-menu-banner ul a {
   color: #fff;
   line-height: 1.5rem;
   padding: 0.625rem 0.938rem 0.625rem 0;
@@ -1326,14 +1240,336 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
   align-items: center;
 }
 
-.main-navigation .container > ul li .sub-menu-banner ul a .link-text {
+.main-navigation .container > ul li:not(.nav-item--sub-menu) .sub-menu-banner ul a .link-text {
   font-size: 1.1em;
 }
 
 @media (min-width: 992px) {
-  .main-navigation .container > ul li:hover > div {
+  .main-navigation .container > ul li:not(.nav-item--sub-menu):hover > div {
     display: block;
   }
+}
+
+.main-navigation .container ul li.software a span::before {
+  color: #67809f;
+}
+
+.main-navigation .container ul li.software:hover {
+  background-color: #67809f;
+}
+
+.main-navigation .container ul li.software:hover a::before {
+  border-color: #67809f transparent transparent;
+}
+
+.main-navigation .container ul li.software:hover a span::before {
+  color: white;
+}
+
+.main-navigation .container ul li.software:hover div {
+  background-color: #526781;
+}
+
+.service-list .row .block.software {
+  background-color: white;
+}
+
+.service-list .row .block.software:hover {
+  background-color: #67809f;
+}
+
+.service-list .row .block.software .icon {
+  background-color: #67809f;
+}
+
+.service-list .row .block.software .btn-container .btn {
+  background-color: #67809f;
+}
+
+.service-list .row .block.software:hover .icon {
+  background-color: white;
+  color: #67809f;
+}
+
+.service-list .row .block.software:hover .btn-container .btn {
+  background-color: white;
+  color: #67809f;
+}
+
+.main-navigation .container ul li.it a span::before {
+  color: #4183d7;
+}
+
+.main-navigation .container ul li.it:hover {
+  background-color: #4183d7;
+}
+
+.main-navigation .container ul li.it:hover a::before {
+  border-color: #4183d7 transparent transparent;
+}
+
+.main-navigation .container ul li.it:hover a span::before {
+  color: white;
+}
+
+.main-navigation .container ul li.it:hover div {
+  background-color: #286abd;
+}
+
+.service-list .row .block.it {
+  background-color: white;
+}
+
+.service-list .row .block.it:hover {
+  background-color: #4183d7;
+}
+
+.service-list .row .block.it .icon {
+  background-color: #4183d7;
+}
+
+.service-list .row .block.it .btn-container .btn {
+  background-color: #4183d7;
+}
+
+.service-list .row .block.it:hover .icon {
+  background-color: white;
+  color: #4183d7;
+}
+
+.service-list .row .block.it:hover .btn-container .btn {
+  background-color: white;
+  color: #4183d7;
+}
+
+.main-navigation .container ul li.digital a span::before {
+  color: #2ecc71;
+}
+
+.main-navigation .container ul li.digital:hover {
+  background-color: #2ecc71;
+}
+
+.main-navigation .container ul li.digital:hover a::before {
+  border-color: #2ecc71 transparent transparent;
+}
+
+.main-navigation .container ul li.digital:hover a span::before {
+  color: white;
+}
+
+.main-navigation .container ul li.digital:hover div {
+  background-color: #25a25a;
+}
+
+.service-list .row .block.digital {
+  background-color: white;
+}
+
+.service-list .row .block.digital:hover {
+  background-color: #2ecc71;
+}
+
+.service-list .row .block.digital .icon {
+  background-color: #2ecc71;
+}
+
+.service-list .row .block.digital .btn-container .btn {
+  background-color: #2ecc71;
+}
+
+.service-list .row .block.digital:hover .icon {
+  background-color: white;
+  color: #2ecc71;
+}
+
+.service-list .row .block.digital:hover .btn-container .btn {
+  background-color: white;
+  color: #2ecc71;
+}
+
+.main-navigation .container ul li.telecoms a span::before {
+  color: #d64541;
+}
+
+.main-navigation .container ul li.telecoms:hover {
+  background-color: #d64541;
+}
+
+.main-navigation .container ul li.telecoms:hover a::before {
+  border-color: #d64541 transparent transparent;
+}
+
+.main-navigation .container ul li.telecoms:hover a span::before {
+  color: white;
+}
+
+.main-navigation .container ul li.telecoms:hover div {
+  background-color: #bc2c28;
+}
+
+.service-list .row .block.telecoms {
+  background-color: white;
+}
+
+.service-list .row .block.telecoms:hover {
+  background-color: #d64541;
+}
+
+.service-list .row .block.telecoms .icon {
+  background-color: #d64541;
+}
+
+.service-list .row .block.telecoms .btn-container .btn {
+  background-color: #d64541;
+}
+
+.service-list .row .block.telecoms:hover .icon {
+  background-color: white;
+  color: #d64541;
+}
+
+.service-list .row .block.telecoms:hover .btn-container .btn {
+  background-color: white;
+  color: #d64541;
+}
+
+.main-navigation .container ul li.web a span::before {
+  color: #926fb1;
+}
+
+.main-navigation .container ul li.web:hover {
+  background-color: #926fb1;
+}
+
+.main-navigation .container ul li.web:hover a::before {
+  border-color: #926fb1 transparent transparent;
+}
+
+.main-navigation .container ul li.web:hover a span::before {
+  color: white;
+}
+
+.main-navigation .container ul li.web:hover div {
+  background-color: #79539a;
+}
+
+.service-list .row .block.web {
+  background-color: white;
+}
+
+.service-list .row .block.web:hover {
+  background-color: #926fb1;
+}
+
+.service-list .row .block.web .icon {
+  background-color: #926fb1;
+}
+
+.service-list .row .block.web .btn-container .btn {
+  background-color: #926fb1;
+}
+
+.service-list .row .block.web:hover .icon {
+  background-color: white;
+  color: #926fb1;
+}
+
+.service-list .row .block.web:hover .btn-container .btn {
+  background-color: white;
+  color: #926fb1;
+}
+
+.main-navigation .container ul li.security a span::before {
+  color: #f62459;
+}
+
+.main-navigation .container ul li.security:hover {
+  background-color: #f62459;
+}
+
+.main-navigation .container ul li.security:hover a::before {
+  border-color: #f62459 transparent transparent;
+}
+
+.main-navigation .container ul li.security:hover a span::before {
+  color: white;
+}
+
+.main-navigation .container ul li.security:hover div {
+  background-color: #de093f;
+}
+
+.service-list .row .block.security {
+  background-color: white;
+}
+
+.service-list .row .block.security:hover {
+  background-color: #f62459;
+}
+
+.service-list .row .block.security .icon {
+  background-color: #f62459;
+}
+
+.service-list .row .block.security .btn-container .btn {
+  background-color: #f62459;
+}
+
+.service-list .row .block.security:hover .icon {
+  background-color: white;
+  color: #f62459;
+}
+
+.service-list .row .block.security:hover .btn-container .btn {
+  background-color: white;
+  color: #f62459;
+}
+
+.main-navigation .container ul li.developer-course a span::before {
+  color: #ce4125;
+}
+
+.main-navigation .container ul li.developer-course:hover {
+  background-color: #ce4125;
+}
+
+.main-navigation .container ul li.developer-course:hover a::before {
+  border-color: #ce4125 transparent transparent;
+}
+
+.main-navigation .container ul li.developer-course:hover a span::before {
+  color: white;
+}
+
+.main-navigation .container ul li.developer-course:hover div {
+  background-color: #a3331d;
+}
+
+.service-list .row .block.developer-course {
+  background-color: white;
+}
+
+.service-list .row .block.developer-course:hover {
+  background-color: #ce4125;
+}
+
+.service-list .row .block.developer-course .icon {
+  background-color: #ce4125;
+}
+
+.service-list .row .block.developer-course .btn-container .btn {
+  background-color: #ce4125;
+}
+
+.service-list .row .block.developer-course:hover .icon {
+  background-color: white;
+  color: #ce4125;
+}
+
+.service-list .row .block.developer-course:hover .btn-container .btn {
+  background-color: white;
+  color: #ce4125;
 }
 
 .container .cms-block a:not(.btn), .container .cms-block strong {
@@ -1355,149 +1591,27 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
   transition: .5s ease;
 }
 
-.container .cms-block .service-list .block:hover.software {
-  background-color: #67809f;
-  color: #fff;
+.container .cms-block .service-list .block:hover {
+  top: -10px;
+  transition: .5s ease;
 }
 
-.container .cms-block .service-list .block:hover.it {
-  background-color: #4183d7;
-  color: #fff;
-}
-
-.container .cms-block .service-list .block:hover.digital {
-  background-color: #2ecc71;
-  color: #fff;
-}
-
-.container .cms-block .service-list .block:hover.telecoms {
-  background-color: #d64541;
-  color: #fff;
-}
-
-.container .cms-block .service-list .block:hover.web {
-  background-color: #926fb1;
-  color: #fff;
-}
-
-.container .cms-block .service-list .block:hover.security {
-  background-color: #f62459;
-  color: #fff;
-}
-
-.container .cms-block .service-list .block:hover.developer-course {
-  background-color: #ce4125;
-  color: #fff;
-}
-
-.container .cms-block .service-list .block:hover .icon {
-  background-color: #fff;
-}
-
-.container .cms-block .service-list .block:hover .icon span.software {
-  color: #67809f;
-}
-
-.container .cms-block .service-list .block:hover .icon span.it {
-  color: #4183d7;
-}
-
-.container .cms-block .service-list .block:hover .icon span.digital {
-  color: #2ecc71;
-}
-
-.container .cms-block .service-list .block:hover .icon span.telecoms {
-  color: #d64541;
-}
-
-.container .cms-block .service-list .block:hover .icon span.web {
-  color: #926fb1;
-}
-
-.container .cms-block .service-list .block:hover .icon span.security {
-  color: #f62459;
-}
-
-.container .cms-block .service-list .block:hover .icon span.developer-course {
-  color: #ce4125;
+.container .cms-block .service-list .block:hover .h2, .container .cms-block .service-list .block:hover .p {
+  color: white;
 }
 
 .container .cms-block .service-list .block > span {
   display: block;
 }
 
-.container .cms-block .service-list .block > span.software {
-  background-color: #67809f;
-}
-
-.container .cms-block .service-list .block > span.it {
-  background-color: #4183d7;
-}
-
-.container .cms-block .service-list .block > span.digital {
-  background-color: #2ecc71;
-}
-
-.container .cms-block .service-list .block > span.telecoms {
-  background-color: #d64541;
-}
-
-.container .cms-block .service-list .block > span.web {
-  background-color: #926fb1;
-}
-
-.container .cms-block .service-list .block > span.security {
-  background-color: #f62459;
-}
-
-.container .cms-block .service-list .block > span.developer-course {
-  background-color: #ce4125;
-}
-
 .container .cms-block .service-list .block .icon {
   height: 65px;
   width: 65px;
   margin: 0 auto 17px;
-  background-color: #333645;
   color: #fff;
   border-radius: 50%;
   font-size: 2rem;
   line-height: 62px;
-}
-
-.container .cms-block .service-list .block .icon.software {
-  background-color: #67809f;
-  color: #fff;
-}
-
-.container .cms-block .service-list .block .icon.it {
-  background-color: #4183d7;
-  color: #fff;
-}
-
-.container .cms-block .service-list .block .icon.digital {
-  background-color: #2ecc71;
-  color: #fff;
-}
-
-.container .cms-block .service-list .block .icon.telecoms {
-  background-color: #d64541;
-  color: #fff;
-}
-
-.container .cms-block .service-list .block .icon.web {
-  background-color: #926fb1;
-  color: #fff;
-}
-
-.container .cms-block .service-list .block .icon.security {
-  background-color: #f62459;
-  color: #fff;
-}
-
-.container .cms-block .service-list .block .icon.developer-course {
-  background-color: #ce4125;
-  color: #fff;
 }
 
 .container .cms-block .service-list .block .h2 {
@@ -1511,8 +1625,6 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
 
 .container .cms-block .service-list .block .btn {
   color: #fff;
-  background-color: #2ecc71;
-  border-color: #2ecc71;
 }
 
 .container .cms-block .service-list .block .p {
@@ -1638,6 +1750,17 @@ em {
   color: #333645;
 }
 
+.article-list .item {
+  position: relative;
+  top: 0;
+  transition: 0.5s ease;
+}
+
+.article-list .item:hover {
+  top: -10px;
+  transition: .5s ease;
+}
+
 .article-list .item .block h3 {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1650,7 +1773,7 @@ em {
 }
 
 .article-list .item .block a {
-  color: #926fb1;
+  color: white;
 }
 
 .article-list .item .block p {
@@ -1695,7 +1818,7 @@ em {
   color: #333645;
 }
 
-.article-list .item .block .btn-web {
+.article-list .item .btn-web {
   color: #fff;
   background-color: #926fb1;
   border-color: #926fb1;
