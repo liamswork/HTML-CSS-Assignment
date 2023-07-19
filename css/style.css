@@ -1686,6 +1686,7 @@ em {
 .brand-background .btn {
   background-color: #272936;
   color: #fff;
+  font-size: 20px;
 }
 
 .brand-background .btn:hover {
@@ -1718,12 +1719,9 @@ em {
   background-color: #1268f4;
 }
 
-@media (max-width: 1259px) {
-  .brand-background .btn, .brand-background .btn-google, .brand-background .btn-trustpilot {
-    border-radius: 6px;
-    padding: 10px 30px;
-    font-size: 20px;
-  }
+.brand-background .btn, .brand-background .btn-google, .brand-background .btn-trustpilot {
+  border-radius: 6px;
+  padding: 10px 23px;
 }
 
 @media (max-width: 1259px) {
@@ -1736,11 +1734,8 @@ em {
   font-style: normal;
 }
 
-.bar {
-  padding-top: 50px;
-}
-
 .bar .headings-container {
+  margin-top: 25px;
   display: flex;
   justify-content: space-between;
 }
@@ -1750,8 +1745,13 @@ em {
   color: #333645;
 }
 
+.latest-articles .section {
+  padding-top: 20px;
+}
+
 .article-list .item {
   position: relative;
+  margin-top: 50px;
   top: 0;
   transition: 0.5s ease;
 }
@@ -1762,6 +1762,7 @@ em {
 }
 
 .article-list .item .block h3 {
+  margin: 0;
   font-size: 1rem;
   line-height: 1.5rem;
 }

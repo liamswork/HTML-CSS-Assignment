@@ -1,14 +1,19 @@
 //Title and viewall bar.
 .bar{
-    padding-top: 50px;
     .headings-container {
+        margin-top: 25px;
         display: flex;
         justify-content: space-between;
     }
-
     a:not(.btn), strong:not(.btn) {
         font-weight: 600;
         color: #333645;
+    }
+}
+
+.latest-articles{
+    .section{
+        padding-top:20px;
     }
 }
 
@@ -16,6 +21,7 @@
 .article-list{
     .item{
         position:relative;
+        margin-top:50px;
         top:0;
         transition: 0.5s ease;
         &:hover{
@@ -23,6 +29,7 @@
         }
     .block {
         h3 {
+            margin:0;
             font-size: 1rem;
             line-height: 1.5rem;
             @media (min-width: 768px) and (max-width: 1259px){
