@@ -17,3 +17,19 @@
         }
     }
 }
+
+@mixin triangleShape($direction : 'down', $color : #fff){
+    @if $direction == 'down'{
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -35px;
+        transform: translateX(-50%);
+        z-index: 90;
+        width: 0;
+        height: 0;
+        border-color: #007bff transparent transparent;
+        border-style: solid;
+        border-width: 35px 83.5px 0;
+    }
+}

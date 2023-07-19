@@ -477,10 +477,6 @@ ul {
   padding: 0;
 }
 
-h4 {
-  font-weight: 400;
-}
-
 a {
   color: #333645;
   text-decoration: none;
@@ -538,6 +534,16 @@ small {
 p {
   line-height: 1.875rem;
   margin-bottom: 25px;
+}
+
+.h2, .h3, .h4, h2, h3, h4 {
+  font-weight: 400;
+  margin: 0 0 15px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 15px;
+  margin-left: 0px;
+  color: #333645;
 }
 
 footer {
@@ -896,11 +902,6 @@ header .inner .search-form-wrapper--mobile > .search-form button {
   outline: none;
 }
 
-header .inner .search-form-wrapper--mobile > .search-form button.active, header .inner .search-form-wrapper--mobile > .search-form button:active, header .inner .search-form-wrapper--mobile > .search-form button:focus, header .inner .search-form-wrapper--mobile > .search-form button:hover {
-  background-color: #7e57a0;
-  border-color: #735093;
-}
-
 header .inner .search-form-wrapper--mobile > .search-form button span {
   font-weight: 600;
 }
@@ -1216,6 +1217,20 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
   color: #fff;
 }
 
+.main-navigation .container > ul li:hover > a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -35px;
+  transform: translateX(-50%);
+  z-index: 90;
+  width: 0;
+  height: 0;
+  border-color: #007bff transparent transparent;
+  border-style: solid;
+  border-width: 35px 83.5px 0;
+}
+
 .main-navigation .container > ul li a {
   position: relative;
   display: block;
@@ -1507,6 +1522,17 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
   font-weight: 400;
 }
 
+.container .cms-block .service-list .services-view-all {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 30px auto -70px;
+}
+
+em {
+  font-size: 2rem;
+}
+
 .brand-background {
   background-color: #333645;
   color: #fff;
@@ -1580,10 +1606,18 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
   background-color: #1268f4;
 }
 
-.brand-background .btn, .brand-background .btn-google, .brand-background .btn-trustpilot {
-  border-radius: 6px;
-  padding: 10px 30px;
-  font-size: 20px;
+@media (max-width: 1259px) {
+  .brand-background .btn, .brand-background .btn-google, .brand-background .btn-trustpilot {
+    border-radius: 6px;
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1259px) {
+  .brand-background .btn-primary-inverse {
+    margin-bottom: 50px;
+  }
 }
 
 .brand-background .fa {
@@ -1604,10 +1638,105 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
   color: #333645;
 }
 
+.article-list .item .block h3 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 1259px) {
+  .article-list .item .block h3 {
+    min-height: 3rem;
+  }
+}
+
+.article-list .item .block a {
+  color: #926fb1;
+}
+
+.article-list .item .block p {
+  line-height: 1.375rem;
+  font-size: .8125rem;
+}
+
+.article-list .item .block .read-time {
+  display: inline;
+  text-transform: uppercase;
+  color: rgba(51, 54, 69, 0.5);
+  font-size: .85rem;
+  vertical-align: middle;
+}
+
+.article-list .item .block .user {
+  display: table;
+  width: 100%;
+  font-size: .875rem;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #ccc;
+}
+
+.article-list .item .block .user * {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.article-list .item .block .user .avatar {
+  width: 10%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.article-list .item .block .user .details {
+  padding-left: 20px;
+  line-height: 1.375rem;
+}
+
+.article-list .item .block .user .details strong {
+  color: #333645;
+}
+
+.article-list .item .block .btn-web {
+  color: #fff;
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+
+.article-list .img-container {
+  position: relative;
+}
+
+.article-list .img-container .category {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  color: #fff;
+  background-color: #926fb1;
+  font-size: .75rem;
+  padding: 0 10px;
+  line-height: 1.438rem;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.article-list .img-container .img img {
+  width: 100%;
+}
+
+.article-list .img-container .img {
+  display: block;
+  border-radius: 3px 3px 0 0;
+  position: relative;
+}
+
 @media (min-width: 768px) and (max-width: 1259px) {
   .article-list .row > :last-child {
     display: none;
   }
+}
+
+.latest-view-all {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .btn {

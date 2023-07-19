@@ -8,7 +8,6 @@
         }
         .service-list{
             margin-top: 20px;
-
             .block {
                 text-decoration: none;
                 margin-top: 30px;
@@ -67,6 +66,15 @@
                     margin-bottom: 13px;
                     font-weight: 400;
                 }
+
+
+            }
+            //Bottom of services, view all text
+            .services-view-all{
+                text-align: center;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin: 30px auto -70px;
             }
         }
     }

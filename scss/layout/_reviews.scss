@@ -1,10 +1,15 @@
+
+    em{
+        font-size: 2rem;
+    }
+
+
 .brand-background{
     background-color: $color-primary;
     color:#fff;
-
     .container{
-        background-color: #333645;
-    color: #fff;
+        background-color: $color-primary;
+        color:#fff;
     }
 
     a{
@@ -68,9 +73,17 @@
     }
 
     .btn, .btn-google, .btn-trustpilot{
-        border-radius: 6px;
-        padding: 10px 30px;
-        font-size: 20px;
+        @media (max-width: 1259px){
+            border-radius: 6px;
+            padding: 10px 30px;
+            font-size: 20px;
+        }
+    }
+
+    .btn-primary-inverse{
+        @media (max-width: 1259px){
+        margin-bottom: 50px;
+        }
     }
 
 

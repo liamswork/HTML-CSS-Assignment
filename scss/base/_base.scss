@@ -8,6 +8,7 @@
 $color-primary:#333645;
 $color-secondary:#323544;
 $color-tertiary:#212330;
+$color-article:#926fb1;
 //Social media colours
 $color-facebook:#3b5998;
 $color-linkedin:#0077b5;
@@ -422,9 +423,6 @@ html{
 ul{
   padding:0;
 }
-h4{
-  font-weight: 400;
-}
 
 a{
   color: #333645;
@@ -487,4 +485,13 @@ p{
   line-height: 1.875rem;
   margin-bottom: 25px;
 }
-    
+
+.h2, .h3, .h4, h2, h3, h4{
+    font-weight: 400;
+    margin: 0 0 15px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+    color: $color-primary;
+}

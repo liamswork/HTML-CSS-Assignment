@@ -36,6 +36,9 @@
                 span{
                     color:#fff;
                 }
+                &>a::before{
+                    @include triangleShape('down',red);
+                }
             }
 
             a{
@@ -47,6 +50,7 @@
                 font-size: 1.125rem;
                 text-decoration: none;
                 line-height: 1;
+
             }
 
             //subsection divs, default to display none.

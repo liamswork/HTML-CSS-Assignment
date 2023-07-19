@@ -121,22 +121,6 @@ footer{
 
     //FOOTER BOTTOM BOX
     .footer-bottom{
-        @media (min-width:768px){
-            display:flex;
-        }
-        ul{
-            display:flex;
-            flex-wrap:wrap;
-            list-style: none;
-            padding:0;
-
-
-        }
-        a{
-            color:#fff;
-            text-decoration: none;
-            &:hover{text-decoration: underline;}
-        }
         font-size: .8125rem;
         padding-top:10px;
         display:flex;
@@ -144,6 +128,24 @@ footer{
         color:#fff;
         width: 100%;
         background-color:$color-tertiary;
+
+        @media (min-width:768px){
+            display:flex;
+        }
+
+        ul{
+            display:flex;
+            flex-wrap:wrap;
+            list-style: none;
+            padding:0;
+        }
+        
+        a{
+            color:#fff;
+            text-decoration: none;
+            &:hover{text-decoration: underline;}
+        }
+
         
         .license{
             text-decoration: none;
