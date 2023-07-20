@@ -724,6 +724,412 @@ footer .footer-bottom .license {
   width: 100%;
 }
 
+.main-navigation .container ul li.software a span::before {
+  color: #67809f;
+}
+
+.main-navigation .container ul li.software:hover {
+  background-color: #67809f;
+}
+
+.main-navigation .container ul li.software:hover a::before {
+  border-color: #67809f transparent transparent;
+}
+
+.main-navigation .container ul li.software:hover a span::before {
+  color: white;
+}
+
+.main-navigation .container ul li.software:hover div {
+  background-color: #526781;
+}
+
+.service-list .row .block.software {
+  background-color: white;
+}
+
+.service-list .row .block.software:hover {
+  background-color: #67809f;
+}
+
+.service-list .row .block.software .icon {
+  background-color: #67809f;
+}
+
+.service-list .row .block.software .btn-container .btn {
+  background-color: #67809f;
+}
+
+.service-list .row .block.software:hover .icon {
+  background-color: white;
+  color: #67809f;
+}
+
+.service-list .row .block.software:hover .btn-container .btn {
+  background-color: white;
+  color: #67809f;
+}
+
+.article-list .software .category {
+  color: white;
+  background-color: #67809f;
+  border-color: #67809f;
+}
+
+.article-list .software .btn-software {
+  color: white;
+  background-color: #67809f;
+  border-color: #67809f;
+}
+
+.main-navigation .container ul li.it a span::before {
+  color: #4183d7;
+}
+
+.main-navigation .container ul li.it:hover {
+  background-color: #4183d7;
+}
+
+.main-navigation .container ul li.it:hover a::before {
+  border-color: #4183d7 transparent transparent;
+}
+
+.main-navigation .container ul li.it:hover a span::before {
+  color: white;
+}
+
+.main-navigation .container ul li.it:hover div {
+  background-color: #286abd;
+}
+
+.service-list .row .block.it {
+  background-color: white;
+}
+
+.service-list .row .block.it:hover {
+  background-color: #4183d7;
+}
+
+.service-list .row .block.it .icon {
+  background-color: #4183d7;
+}
+
+.service-list .row .block.it .btn-container .btn {
+  background-color: #4183d7;
+}
+
+.service-list .row .block.it:hover .icon {
+  background-color: white;
+  color: #4183d7;
+}
+
+.service-list .row .block.it:hover .btn-container .btn {
+  background-color: white;
+  color: #4183d7;
+}
+
+.article-list .it .category {
+  color: white;
+  background-color: #4183d7;
+  border-color: #4183d7;
+}
+
+.article-list .it .btn-it {
+  color: white;
+  background-color: #4183d7;
+  border-color: #4183d7;
+}
+
+.main-navigation .container ul li.digital a span::before {
+  color: #2ecc71;
+}
+
+.main-navigation .container ul li.digital:hover {
+  background-color: #2ecc71;
+}
+
+.main-navigation .container ul li.digital:hover a::before {
+  border-color: #2ecc71 transparent transparent;
+}
+
+.main-navigation .container ul li.digital:hover a span::before {
+  color: white;
+}
+
+.main-navigation .container ul li.digital:hover div {
+  background-color: #25a25a;
+}
+
+.service-list .row .block.digital {
+  background-color: white;
+}
+
+.service-list .row .block.digital:hover {
+  background-color: #2ecc71;
+}
+
+.service-list .row .block.digital .icon {
+  background-color: #2ecc71;
+}
+
+.service-list .row .block.digital .btn-container .btn {
+  background-color: #2ecc71;
+}
+
+.service-list .row .block.digital:hover .icon {
+  background-color: white;
+  color: #2ecc71;
+}
+
+.service-list .row .block.digital:hover .btn-container .btn {
+  background-color: white;
+  color: #2ecc71;
+}
+
+.article-list .digital .category {
+  color: white;
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+
+.article-list .digital .btn-digital {
+  color: white;
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+
+.main-navigation .container ul li.telecoms a span::before {
+  color: #d64541;
+}
+
+.main-navigation .container ul li.telecoms:hover {
+  background-color: #d64541;
+}
+
+.main-navigation .container ul li.telecoms:hover a::before {
+  border-color: #d64541 transparent transparent;
+}
+
+.main-navigation .container ul li.telecoms:hover a span::before {
+  color: white;
+}
+
+.main-navigation .container ul li.telecoms:hover div {
+  background-color: #bc2c28;
+}
+
+.service-list .row .block.telecoms {
+  background-color: white;
+}
+
+.service-list .row .block.telecoms:hover {
+  background-color: #d64541;
+}
+
+.service-list .row .block.telecoms .icon {
+  background-color: #d64541;
+}
+
+.service-list .row .block.telecoms .btn-container .btn {
+  background-color: #d64541;
+}
+
+.service-list .row .block.telecoms:hover .icon {
+  background-color: white;
+  color: #d64541;
+}
+
+.service-list .row .block.telecoms:hover .btn-container .btn {
+  background-color: white;
+  color: #d64541;
+}
+
+.article-list .telecoms .category {
+  color: white;
+  background-color: #d64541;
+  border-color: #d64541;
+}
+
+.article-list .telecoms .btn-telecoms {
+  color: white;
+  background-color: #d64541;
+  border-color: #d64541;
+}
+
+.main-navigation .container ul li.web a span::before {
+  color: #926fb1;
+}
+
+.main-navigation .container ul li.web:hover {
+  background-color: #926fb1;
+}
+
+.main-navigation .container ul li.web:hover a::before {
+  border-color: #926fb1 transparent transparent;
+}
+
+.main-navigation .container ul li.web:hover a span::before {
+  color: white;
+}
+
+.main-navigation .container ul li.web:hover div {
+  background-color: #79539a;
+}
+
+.service-list .row .block.web {
+  background-color: white;
+}
+
+.service-list .row .block.web:hover {
+  background-color: #926fb1;
+}
+
+.service-list .row .block.web .icon {
+  background-color: #926fb1;
+}
+
+.service-list .row .block.web .btn-container .btn {
+  background-color: #926fb1;
+}
+
+.service-list .row .block.web:hover .icon {
+  background-color: white;
+  color: #926fb1;
+}
+
+.service-list .row .block.web:hover .btn-container .btn {
+  background-color: white;
+  color: #926fb1;
+}
+
+.article-list .web .category {
+  color: white;
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+
+.article-list .web .btn-web {
+  color: white;
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+
+.main-navigation .container ul li.security a span::before {
+  color: #f62459;
+}
+
+.main-navigation .container ul li.security:hover {
+  background-color: #f62459;
+}
+
+.main-navigation .container ul li.security:hover a::before {
+  border-color: #f62459 transparent transparent;
+}
+
+.main-navigation .container ul li.security:hover a span::before {
+  color: white;
+}
+
+.main-navigation .container ul li.security:hover div {
+  background-color: #de093f;
+}
+
+.service-list .row .block.security {
+  background-color: white;
+}
+
+.service-list .row .block.security:hover {
+  background-color: #f62459;
+}
+
+.service-list .row .block.security .icon {
+  background-color: #f62459;
+}
+
+.service-list .row .block.security .btn-container .btn {
+  background-color: #f62459;
+}
+
+.service-list .row .block.security:hover .icon {
+  background-color: white;
+  color: #f62459;
+}
+
+.service-list .row .block.security:hover .btn-container .btn {
+  background-color: white;
+  color: #f62459;
+}
+
+.article-list .security .category {
+  color: white;
+  background-color: #f62459;
+  border-color: #f62459;
+}
+
+.article-list .security .btn-security {
+  color: white;
+  background-color: #f62459;
+  border-color: #f62459;
+}
+
+.main-navigation .container ul li.developer-course a span::before {
+  color: #ce4125;
+}
+
+.main-navigation .container ul li.developer-course:hover {
+  background-color: #ce4125;
+}
+
+.main-navigation .container ul li.developer-course:hover a::before {
+  border-color: #ce4125 transparent transparent;
+}
+
+.main-navigation .container ul li.developer-course:hover a span::before {
+  color: white;
+}
+
+.main-navigation .container ul li.developer-course:hover div {
+  background-color: #a3331d;
+}
+
+.service-list .row .block.developer-course {
+  background-color: white;
+}
+
+.service-list .row .block.developer-course:hover {
+  background-color: #ce4125;
+}
+
+.service-list .row .block.developer-course .icon {
+  background-color: #ce4125;
+}
+
+.service-list .row .block.developer-course .btn-container .btn {
+  background-color: #ce4125;
+}
+
+.service-list .row .block.developer-course:hover .icon {
+  background-color: white;
+  color: #ce4125;
+}
+
+.service-list .row .block.developer-course:hover .btn-container .btn {
+  background-color: white;
+  color: #ce4125;
+}
+
+.article-list .developer-course .category {
+  color: white;
+  background-color: #ce4125;
+  border-color: #ce4125;
+}
+
+.article-list .developer-course .btn-developer-course {
+  color: white;
+  background-color: #ce4125;
+  border-color: #ce4125;
+}
+
 header .inner {
   padding: 20px 0;
   background-color: #fff;
@@ -1250,328 +1656,6 @@ header .inner .search-form-wrapper--mobile > .search-form button span {
   }
 }
 
-.main-navigation .container ul li.software a span::before {
-  color: #67809f;
-}
-
-.main-navigation .container ul li.software:hover {
-  background-color: #67809f;
-}
-
-.main-navigation .container ul li.software:hover a::before {
-  border-color: #67809f transparent transparent;
-}
-
-.main-navigation .container ul li.software:hover a span::before {
-  color: white;
-}
-
-.main-navigation .container ul li.software:hover div {
-  background-color: #526781;
-}
-
-.service-list .row .block.software {
-  background-color: white;
-}
-
-.service-list .row .block.software:hover {
-  background-color: #67809f;
-}
-
-.service-list .row .block.software .icon {
-  background-color: #67809f;
-}
-
-.service-list .row .block.software .btn-container .btn {
-  background-color: #67809f;
-}
-
-.service-list .row .block.software:hover .icon {
-  background-color: white;
-  color: #67809f;
-}
-
-.service-list .row .block.software:hover .btn-container .btn {
-  background-color: white;
-  color: #67809f;
-}
-
-.main-navigation .container ul li.it a span::before {
-  color: #4183d7;
-}
-
-.main-navigation .container ul li.it:hover {
-  background-color: #4183d7;
-}
-
-.main-navigation .container ul li.it:hover a::before {
-  border-color: #4183d7 transparent transparent;
-}
-
-.main-navigation .container ul li.it:hover a span::before {
-  color: white;
-}
-
-.main-navigation .container ul li.it:hover div {
-  background-color: #286abd;
-}
-
-.service-list .row .block.it {
-  background-color: white;
-}
-
-.service-list .row .block.it:hover {
-  background-color: #4183d7;
-}
-
-.service-list .row .block.it .icon {
-  background-color: #4183d7;
-}
-
-.service-list .row .block.it .btn-container .btn {
-  background-color: #4183d7;
-}
-
-.service-list .row .block.it:hover .icon {
-  background-color: white;
-  color: #4183d7;
-}
-
-.service-list .row .block.it:hover .btn-container .btn {
-  background-color: white;
-  color: #4183d7;
-}
-
-.main-navigation .container ul li.digital a span::before {
-  color: #2ecc71;
-}
-
-.main-navigation .container ul li.digital:hover {
-  background-color: #2ecc71;
-}
-
-.main-navigation .container ul li.digital:hover a::before {
-  border-color: #2ecc71 transparent transparent;
-}
-
-.main-navigation .container ul li.digital:hover a span::before {
-  color: white;
-}
-
-.main-navigation .container ul li.digital:hover div {
-  background-color: #25a25a;
-}
-
-.service-list .row .block.digital {
-  background-color: white;
-}
-
-.service-list .row .block.digital:hover {
-  background-color: #2ecc71;
-}
-
-.service-list .row .block.digital .icon {
-  background-color: #2ecc71;
-}
-
-.service-list .row .block.digital .btn-container .btn {
-  background-color: #2ecc71;
-}
-
-.service-list .row .block.digital:hover .icon {
-  background-color: white;
-  color: #2ecc71;
-}
-
-.service-list .row .block.digital:hover .btn-container .btn {
-  background-color: white;
-  color: #2ecc71;
-}
-
-.main-navigation .container ul li.telecoms a span::before {
-  color: #d64541;
-}
-
-.main-navigation .container ul li.telecoms:hover {
-  background-color: #d64541;
-}
-
-.main-navigation .container ul li.telecoms:hover a::before {
-  border-color: #d64541 transparent transparent;
-}
-
-.main-navigation .container ul li.telecoms:hover a span::before {
-  color: white;
-}
-
-.main-navigation .container ul li.telecoms:hover div {
-  background-color: #bc2c28;
-}
-
-.service-list .row .block.telecoms {
-  background-color: white;
-}
-
-.service-list .row .block.telecoms:hover {
-  background-color: #d64541;
-}
-
-.service-list .row .block.telecoms .icon {
-  background-color: #d64541;
-}
-
-.service-list .row .block.telecoms .btn-container .btn {
-  background-color: #d64541;
-}
-
-.service-list .row .block.telecoms:hover .icon {
-  background-color: white;
-  color: #d64541;
-}
-
-.service-list .row .block.telecoms:hover .btn-container .btn {
-  background-color: white;
-  color: #d64541;
-}
-
-.main-navigation .container ul li.web a span::before {
-  color: #926fb1;
-}
-
-.main-navigation .container ul li.web:hover {
-  background-color: #926fb1;
-}
-
-.main-navigation .container ul li.web:hover a::before {
-  border-color: #926fb1 transparent transparent;
-}
-
-.main-navigation .container ul li.web:hover a span::before {
-  color: white;
-}
-
-.main-navigation .container ul li.web:hover div {
-  background-color: #79539a;
-}
-
-.service-list .row .block.web {
-  background-color: white;
-}
-
-.service-list .row .block.web:hover {
-  background-color: #926fb1;
-}
-
-.service-list .row .block.web .icon {
-  background-color: #926fb1;
-}
-
-.service-list .row .block.web .btn-container .btn {
-  background-color: #926fb1;
-}
-
-.service-list .row .block.web:hover .icon {
-  background-color: white;
-  color: #926fb1;
-}
-
-.service-list .row .block.web:hover .btn-container .btn {
-  background-color: white;
-  color: #926fb1;
-}
-
-.main-navigation .container ul li.security a span::before {
-  color: #f62459;
-}
-
-.main-navigation .container ul li.security:hover {
-  background-color: #f62459;
-}
-
-.main-navigation .container ul li.security:hover a::before {
-  border-color: #f62459 transparent transparent;
-}
-
-.main-navigation .container ul li.security:hover a span::before {
-  color: white;
-}
-
-.main-navigation .container ul li.security:hover div {
-  background-color: #de093f;
-}
-
-.service-list .row .block.security {
-  background-color: white;
-}
-
-.service-list .row .block.security:hover {
-  background-color: #f62459;
-}
-
-.service-list .row .block.security .icon {
-  background-color: #f62459;
-}
-
-.service-list .row .block.security .btn-container .btn {
-  background-color: #f62459;
-}
-
-.service-list .row .block.security:hover .icon {
-  background-color: white;
-  color: #f62459;
-}
-
-.service-list .row .block.security:hover .btn-container .btn {
-  background-color: white;
-  color: #f62459;
-}
-
-.main-navigation .container ul li.developer-course a span::before {
-  color: #ce4125;
-}
-
-.main-navigation .container ul li.developer-course:hover {
-  background-color: #ce4125;
-}
-
-.main-navigation .container ul li.developer-course:hover a::before {
-  border-color: #ce4125 transparent transparent;
-}
-
-.main-navigation .container ul li.developer-course:hover a span::before {
-  color: white;
-}
-
-.main-navigation .container ul li.developer-course:hover div {
-  background-color: #a3331d;
-}
-
-.service-list .row .block.developer-course {
-  background-color: white;
-}
-
-.service-list .row .block.developer-course:hover {
-  background-color: #ce4125;
-}
-
-.service-list .row .block.developer-course .icon {
-  background-color: #ce4125;
-}
-
-.service-list .row .block.developer-course .btn-container .btn {
-  background-color: #ce4125;
-}
-
-.service-list .row .block.developer-course:hover .icon {
-  background-color: white;
-  color: #ce4125;
-}
-
-.service-list .row .block.developer-course:hover .btn-container .btn {
-  background-color: white;
-  color: #ce4125;
-}
-
 .container .cms-block a:not(.btn), .container .cms-block strong {
   font-weight: 600;
   color: #333645;
@@ -1719,6 +1803,12 @@ em {
   background-color: #1268f4;
 }
 
+@media (max-width: 768px) {
+  .brand-background .btn-google, .brand-background .btn-trustpilot {
+    margin-top: 25px;
+  }
+}
+
 .brand-background .btn, .brand-background .btn-google, .brand-background .btn-trustpilot {
   border-radius: 6px;
   padding: 10px 23px;
@@ -1726,7 +1816,7 @@ em {
 
 @media (max-width: 1259px) {
   .brand-background .btn-primary-inverse {
-    margin-bottom: 50px;
+    margin-bottom: 35px;
   }
 }
 
@@ -1759,6 +1849,31 @@ em {
 .article-list .item:hover {
   top: -10px;
   transition: .5s ease;
+}
+
+.article-list .item .img-container {
+  position: relative;
+}
+
+.article-list .item .img-container .category {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: .75rem;
+  padding: 0 10px;
+  line-height: 1.438rem;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.article-list .item .img-container .img img {
+  width: 100%;
+}
+
+.article-list .item .img-container .img {
+  display: block;
+  border-radius: 3px 3px 0 0;
+  position: relative;
 }
 
 .article-list .item .block h3 {
@@ -1817,39 +1932,6 @@ em {
 
 .article-list .item .block .user .details strong {
   color: #333645;
-}
-
-.article-list .item .btn-web {
-  color: #fff;
-  background-color: #926fb1;
-  border-color: #926fb1;
-}
-
-.article-list .img-container {
-  position: relative;
-}
-
-.article-list .img-container .category {
-  position: absolute;
-  top: 10px;
-  right: 0;
-  color: #fff;
-  background-color: #926fb1;
-  font-size: .75rem;
-  padding: 0 10px;
-  line-height: 1.438rem;
-  text-transform: uppercase;
-  z-index: 1;
-}
-
-.article-list .img-container .img img {
-  width: 100%;
-}
-
-.article-list .img-container .img {
-  display: block;
-  border-radius: 3px 3px 0 0;
-  position: relative;
 }
 
 @media (min-width: 768px) and (max-width: 1259px) {

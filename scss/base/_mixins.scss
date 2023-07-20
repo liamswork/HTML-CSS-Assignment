@@ -49,6 +49,7 @@
     transition: .5s ease;
 }
 
+//Included in the header file.
 @mixin service-colors($color-type: primary) {
     $colors: map-get($color-themes, $color-type);
     @each $class, $color in $colors {
@@ -103,6 +104,24 @@
                 }
             }
         }
+
+        .article-list{
+            .#{$class}{
+                .category{
+                    color:white;
+                    background-color: $color;
+                    border-color: $color;
+                }
+
+                .btn-#{$class}{
+                    color:white;
+                    background-color: $color;
+                    border-color: $color;
+                }
+            }
+        }
+
+
     }
 }
 

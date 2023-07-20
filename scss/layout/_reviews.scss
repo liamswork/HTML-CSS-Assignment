@@ -73,18 +73,20 @@
         }
     }
 
+    .btn-google, .btn-trustpilot{
+        @media (max-width: 768px){
+            margin-top:25px;
+        }
+    }
     .btn, .btn-google, .btn-trustpilot{
         border-radius: 6px;
         padding: 10px 23px;
 
-        @media (max-width: 1259px){
-
-        }
     }
 
     .btn-primary-inverse{
         @media (max-width: 1259px){
-        margin-bottom: 50px;
+        margin-bottom: 35px;
         }
     }
 

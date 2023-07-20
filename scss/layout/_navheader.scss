@@ -4,7 +4,6 @@
     
     //Colour any spans based on their class. We will overwrite this on hover.
     span{
-        //@include class-colors-font;
         font-size:1.3rem;
     }
 
@@ -55,8 +54,6 @@
 
             //subsection divs, default to display none.
             .sub-menu-banner{
-                //Pull from the darken colour palette, based on this divs class.
-                //@include class-colors(darken,#fff);
                 margin: 0;
                 display: none;
                 position: absolute;
