@@ -67,6 +67,44 @@ $color-themes: (
   -moz-osx-font-smoothing: grayscale;
 }
 
+//Default description box to hidden and off of the page flow.
+.description{
+  display:none;
+  position: absolute;
+  bottom: 100%;
+  left: -200px;
+  right: -200px;
+    p{
+      margin-bottom: 0;
+    }
+    .btn{
+      margin-top: 11px;
+      font-size: 16px;
+      display: flex;
+      color:#fff;
+      em.pull-right{
+        line-height: 32px;
+        font-size:16px;
+        margin-right: -4px;
+        margin-left: 12px;
+      }
+    }
+  .arrow{
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    margin-left: -36px;
+    &:after{
+      content: "";
+    margin: auto;
+    display: inline-block;
+    border-color: #333645 transparent transparent;
+    border-style: solid;
+    border-width: 35px 36px 0;
+    }
+  }
+}
+
 .float-right-sm {
   @media (min-width: 768px)
   {
@@ -121,15 +159,15 @@ body {
 
 //Button square behind buttons.
 .btn-primary{
-    color: #fff;
-    background-color: #333645;
-    border-color: #333645;
+  color: #fff;
+  background-color: #333645;
+  border-color: #333645;
 }
 
 .btn-default{
-    color: #fff;
-    background-color: #999aa2;
-    border-color: #999aa2;
+  color: #fff;
+  background-color: #999aa2;
+  border-color: #999aa2;
 }
 
 //Form control base settings
@@ -174,6 +212,12 @@ p{
 
 .h1{
   margin:0 0 28px;
+}
+
+//Consider moving this to a theme module if we ever add more.
+label.required:after, label .required:after {
+  content: " *";
+  color: #ff0015;
 }
 
 //Icon content links.

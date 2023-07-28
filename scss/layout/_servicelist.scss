@@ -7,6 +7,38 @@
             color: #333645;
         }
 
+        .col-md-12{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h2{
+                margin:0;
+                font-size:36px;
+            }
+            //View our work text link
+            h3{
+                margin:0;
+                font-size:1.625rem;
+                a{
+                    display:flex;
+                    align-items: flex-start;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                    em{
+                        @-moz-document url-prefix(){
+                            font-size:1.57rem;
+                        }
+                        margin-left:-1px;
+                        font-size:1.6rem;
+                    }
+                }
+            }
+        }
+        
+        
+
         .service-list{
             margin-top: 20px;
             .block {

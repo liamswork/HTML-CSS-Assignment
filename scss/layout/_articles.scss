@@ -49,13 +49,13 @@
         
             .img{
                 display: block;
-                border-radius: 3px 3px 0 0;
                 position: relative;
             }
         }
-       
+    
         //block that contains article info, author, etc.
         .block {
+            border-radius: 0;
             h3 {
                 margin:0;
                 font-size: 1rem;
@@ -65,7 +65,7 @@
                 }
             }
             a{
-                color:white;
+                //color:white;
             }
 
             p{
@@ -98,8 +98,11 @@
 
                 .avatar{
                     width:10%;
-                    border-radius: 50%;
-                    overflow: hidden;
+                    picture{
+                        border-radius: 50%;
+                        overflow: hidden;
+                    }
+
                 }
 
                 .details{

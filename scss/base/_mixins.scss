@@ -53,6 +53,12 @@
     $colors: map-get($color-themes, $color-type);
     @each $class, $color in $colors {
 
+        .description{
+            .btn-#{$class}{
+                background-color: $color;
+            }
+        }
+
         //NAV HEADER ICONS.
         .main-navigation{
             //NAV BUTTON DEFAULT
@@ -72,8 +78,7 @@
                     background-color: darken($color, 10%);
                 }
             }
-
-        }
+        }   //End of nav header buttons
 
         //SERVICE LIST COLOURS
         .service-list .row .block.#{$class}{
@@ -101,8 +106,15 @@
                     background-color: white;
                     color: $color;
                 }
+                .block{
+                    h3{
+                        a{
+
+                        }
+                    }
+                }
             }
-        }
+        } //End of services
 
         .article-list{
             .#{$class}{
@@ -117,10 +129,10 @@
                     background-color: $color;
                     border-color: $color;
                 }
+                .block h3 a{
+                    color:$color;
+                }
             }
-        }
-
-
+        } //End of articles
     }
 }
-
