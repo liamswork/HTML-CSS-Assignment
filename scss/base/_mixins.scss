@@ -53,9 +53,27 @@
     $colors: map-get($color-themes, $color-type);
     @each $class, $color in $colors {
 
-        .description{
+            
             .btn-#{$class}{
                 background-color: $color;
+                color:white;
+            }
+
+            .icon-#{$class}{
+                color:$color;
+                &:hover{
+                    
+                }
+            }
+        .banner .sliding .owl-stage-outer .owl-stage .owl-item .item .content{
+            .btn-#{$class}{
+
+                    background-color: $color;
+                    border-color: $color;
+                &:hover {
+                    color: #fff;
+                    background-color:darken($color, 4%);
+                }
             }
         }
 
@@ -89,6 +107,9 @@
             //CARD ICON
             .icon{
                 background-color: $color;
+                span{
+                    color:white;
+                }
             }
 
             //CARD BUTTON
@@ -101,6 +122,9 @@
                 .icon{
                     background-color: white;
                     color: $color;
+                    span{
+                        color:$color;
+                    }
                 }
                 .btn-container .btn{
                     background-color: white;
