@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -183,6 +184,16 @@
         </div>
         </div>
     </div>
+
+    <!-- Php outputs may appear here for debugging purposes. -->
+    <div  class="container">
+      <p style="color:red">
+      <?php
+          //include('inc/articles.php');
+        ?>
+      </p>
+    </div>
+
 
     <!--Our Services-->
     <div class="container section">
@@ -458,7 +469,10 @@
             <div class="container">
               <div class="article-list">
                 <div class="row">
-                  <div class="col-lg-4 col-sm-6">
+                        <?php
+          include('inc/articles.php');
+        ?>
+                  <!-- <div class="col-lg-4 col-sm-6">
                     <div class="item web">
                       <a class="article-link" href="#"></a>
                       <a></a>
@@ -555,7 +569,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -737,7 +751,7 @@
       </div>
     </div>
 
-    
+
     <?php
       include('inc/footer.php');
     ?>
