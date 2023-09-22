@@ -2,7 +2,77 @@
     p{
         margin:0 0 0 10px;
     }
+    padding-top:14px;
+    padding-bottom:14px;
     display:flex;
     flex-direction: row;
     align-items: center;
+}
+
+.page-head{
+    padding-top:50px;
+    .container{
+        h1{
+            color:$color-primary;
+        }
+    }
+}
+
+.office-addresses{
+    .service-list{
+        .office-address-row{
+            .col-md-6{
+                .block{
+                    border:1px solid #ccc;
+                    padding:0;
+                    border-radius: 20px;
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                    overflow:hidden;
+                    .image{
+                        img{
+                            width:100%;
+                            max-width: 100%;
+                            height: AUTO;
+                            vertical-align: middle;
+                            border:0;
+                        }
+                    }
+                    .content{
+                        padding:30px;
+                        text-align: left;
+                        display:flex;
+                        flex-direction: column;
+                        .h2{
+                            font-size:20px;
+                        }
+                        .p{
+                            font-size:13px;
+                            line-height:22px;
+                        }
+                        .tel{
+                            a{
+                                font-weight:700;
+                                font-size:26px;
+                            }
+                        }
+                        .view-more{
+                            margin-top: 15px;
+                            a{
+                                font-size:14px;
+                                padding:14px 32px
+                            }
+                        }
+                    }
+                }
+                .map{
+                    height: 250px;
+                    overflow: hidden;
+                    border-bottom-left-radius: 20px;
+                    border-bottom-right-radius:20px;
+                }
+                margin-bottom:30px;
+            }
+        }
+    }
 }

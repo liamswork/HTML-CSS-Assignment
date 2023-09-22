@@ -1,31 +1,31 @@
 .btn{
-    display: inline-block;
-    margin-bottom: 0;
-    font-weight: 400;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    background-image: none;
-    border: 1px solid transparent;
-    white-space: nowrap;
+    // display: inline-block;
+    // margin-bottom: 0;
+    // font-weight: 400;
+    // text-align: center;
+    // vertical-align: middle;
+    // cursor: pointer;
+    // background-image: none;
+    // border: 1px solid transparent;
+    // white-space: nowrap;
     padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    border-radius: 2px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    // font-size: 14px;
+    // line-height: 1.42857143;
+    // border-radius: 2px;
+    // -webkit-user-select: none;
+    // -moz-user-select: none;
+    // -ms-user-select: none;
+    // user-select: none;
 }
 
 .btn{
-    height: auto;
-    line-height: 35px;
     padding: 5px 15px;
     text-transform: uppercase;
+    //height: auto;
+    //line-height: 35px;
     font-size: 1.063rem;
-    border-radius: 3px;
-    white-space: normal;
+    //border-radius: 3px;
+    //white-space: normal;
 }
 
 .btn:focus{
