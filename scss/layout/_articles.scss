@@ -105,13 +105,17 @@
                     picture{
                         border-radius: 50%;
                         overflow: hidden;
+                        img{
+                            height:auto;
+                            max-width:50px;
+                        }
                     }
 
                 }
 
                 .details{
                     padding-left: 20px;
-                    line-height: 1.375rem;
+                    line-height: 1rem;
                     strong{
                         color:$color-primary
                     }

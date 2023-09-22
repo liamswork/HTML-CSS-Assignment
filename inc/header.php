@@ -458,11 +458,11 @@
                 </ul>
               </div>
             </li>
-            <li data-key="developer-course" class="developer-course  nav-item">
+            <li data-key="school" class="school  nav-item">
               <a href="#">
-                <span class="icon-school developer-course"></span>
+                <span class="icon-school school"></span>
                 <small>Developer</small> Course </a>
-              <div class="sub-menu-banner developer-course">
+              <div class="sub-menu-banner school">
                 <ul class="container sub-menu" role="menu">
                   <li class="h2 sub-menu-banner-title"> Our Developer Course Services </li>
                   <li class="nav-item nav-item--sub-menu">
@@ -963,11 +963,11 @@
                 </ul>
               </div>
             </li>
-            <li data-key="developer-course" class="developer-course  nav-item">
+            <li data-key="developer-course" class="school  nav-item">
               <a href="#">
-                <span class="icon-school developer-course"></span>
+                <span class="icon-school school"></span>
                 <small>Developer</small> Course </a>
-              <div class="sub-menu-banner developer-course">
+              <div class="sub-menu-banner school">
                 <ul class="container sub-menu" role="menu">
                   <li class="h2 sub-menu-banner-title"> Our Developer Course Services </li>
                   <li class="nav-item nav-item--sub-menu">

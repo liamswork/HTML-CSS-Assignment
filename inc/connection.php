@@ -6,10 +6,10 @@ try{
   //Give exception handling capability
   $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 } catch (Exception $e) {
-  echo "Unable to connect <br> <br>";
+  echo "Unable to connect to latest news database. <br> <br>";
   //echo details of potential errors
-  echo $e->getMessage();
+  //echo $e->getMessage();
   exit;
 }
-echo "Connected to the database <br> <br>";
+//echo "Connected to the database <br> <br>";
  ?>
