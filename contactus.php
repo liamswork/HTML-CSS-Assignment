@@ -1,3 +1,4 @@
+<?php include 'inc/form-process.php';?>
 <!DOCTYPE html>
 <html lang="en">
   <?php
@@ -32,7 +33,6 @@
             <div class="office-addresses">
                 <div class="service-list container">
                     <div class="row office-address-row">
-                        
                         <!--London Office-->
                         <div class="col-md-6">
                             <div class="block address">
@@ -105,9 +105,96 @@
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2039.811349846741!2d1.7117470353913606!3d52.5558991151212!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47da0593b311cec3%3A0x1cb3c1d4c0b340f6!2sNetmatters%20Great%20Yarmouth!5e0!3m2!1sen!2suk!4v1695387174862!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="section container">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-push-8">
+                        <div class="email-us">
+                            <p><strong>Email us on:</strong><br></p>
+                            <p><a href="#" class="h3 text-web">sales@netmatters.com</a></p>
+                            <p><strong>Business hours:</strong></p>
+                            <p><strong>Monday - Friday 07:00 - 18:00</strong></p>
+                            <!--Dropdown out of hours it support-->
+                            <div class="ooh-dropdown">
+                                <div class="accordion out-of-hours">
+                                    <div class="question out-of-hours">
+                                        <h4><a id="outofhours" href="#"><p class="question-text">Out of Hours IT Support <em style="font-style: normal" class="fa fa-chevron-down rotate down"></em></p></a></h4>
+                                        <div id="answer" class="answer">
+                                            <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
+                                            <p><strong>Monday - Friday 18:00 - 22:00</strong><br><strong>Saturday 08:00 - 16:00</strong><br><strong>Sunday 10:00 - 18:00</strong></p>
+                                            <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours&nbsp; voicemail. A technician will contact you on the number provided within 45 minutes of your call.&nbsp;</p>
+                                        </div>
+                                    </div>
+                                </div>
 
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-lg-8 col-lg-pull-4">
+                        <form  id="contact-form" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                            <!--Inputs-->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name" class="required">
+                                            Your Name
+                                        </label>
+                                        <input class="form-control" type="text" id="name" name="name" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name" class="">
+                                            Company Name
+                                        </label>
+                                        <input class="form-control" type="text" id="cname" name="cname" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name" class="required">
+                                            Your Email
+                                        </label>
+                                        <input class="form-control" type="text" id="email" name="email" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name" class="required">
+                                            Your Telephone Number
+                                        </label>
+                                        <input class="form-control" type="text" id="telephone" name="telephone" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Message-->
+                            <div class="form-group">
+                                <label for="message" class="required">
+                                    Message
+                                </label>
+                                <textarea class="form-control" name="message" rows="10" cols="50">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
+                            </div>
+                            <!--Checkbox-->
+                            <div class="form-group">
+                                <label class="checkcontainer">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    <span class="media-body">
+                                        Please tick this box if you wish to receive marketing information from us.
+                                        Please see our <a href="#" rel="noopener noreferrer">Privacy Policy</a> for more information on how we keep your data safe.
+                                    </span>
+                                </label>
+                            </div>
+                            <!--Send button / required details text-->
+                            <div class="action-block">
+                                <button id="formsubmit" name="submit" class="btn btn-primary">Send Enquiry</button>
+                                <small class="helper-text"><span class="text-danger">*</span> Fields Required</small>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -130,6 +217,7 @@
         <script src="js/sidenav.js"></script>
         <script src="js/sticky.js"></script>
         <script src="js/crumbs.js"></script>
+        <script src="js/contactus.js"></script>
     </body>
 
 </html>

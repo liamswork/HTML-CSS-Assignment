@@ -73,19 +73,3 @@ function printCard($article){
         return false;
     }
 }
-
-
-
-
-//Deprecated functions for personal reference.
-
-//  //This is just vardumps at the moment.
-//  function displayRow($_db, $index){
-//     if(fetchArticleRow($_db, $index)){
-//         var_dump(fetchArticleRow($_db, $index));
-//         echo "<br> <br>";
-//         $currentArticle = fetchArticleRow($_db, $index);
-//     }else{
-//         echo "Problem fetching article rows";
-//     }
-//  }

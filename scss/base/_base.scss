@@ -71,6 +71,12 @@ $color-themes: (
   color: #926fb1 !important;
 }
 
+
+label.required:after, label .required:after {
+  content: " *";
+  color: #d24d57;
+}
+
 .main-wrapper{
   position:absolute;
   top:0;
@@ -193,6 +199,7 @@ body {
   color: #fff;
   background-color: #333645;
   border-color: #333645;
+  line-height: 35px;
 }
 
 .btn-default{
