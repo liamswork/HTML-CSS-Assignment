@@ -11,5 +11,13 @@ try{
   //echo $e->getMessage();
   exit;
 }
-//echo "Connected to the database <br> <br>";
+
+try{
+  $dbenquiries = new PDO("mysql:host=localhost;dbname=netmatters_enquries", 'root', '');
+  $dbenquiries->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+} catch (Exception $e) {
+  echo "Unable to connect to form database. <br> <br>";
+  exit;
+}
+
  ?>

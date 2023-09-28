@@ -4,10 +4,9 @@ $outOfHoursButton.addEventListener('click', function(event) {
     toggleOutOfHours();
 });
 
-const $formSubmit = document.getElementById('formsubmit');
-$formSubmit.addEventListener('click', function(event) {
-    
-});
+// const $formSubmit = document.getElementById('formsubmit');
+// $formSubmit.addEventListener('click', function(event) {
+// });
 
 function toggleOutOfHours(){
     event.preventDefault();

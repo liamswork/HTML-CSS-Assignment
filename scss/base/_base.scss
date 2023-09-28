@@ -193,7 +193,14 @@ body {
   letter-spacing: .4px;
 }
 
-
+.error{
+  color:red;
+  font-weight:700;
+}
+.success{
+  color:rgb(13, 163, 13);
+  font-weight:700;
+}
 //Button square behind buttons.
 .btn-primary{
   color: #fff;

@@ -143,31 +143,35 @@
                                         <label for="name" class="required">
                                             Your Name
                                         </label>
-                                        <input class="form-control" type="text" id="name" name="name" value="">
+                                        <input class="form-control" type="text" id="name" name="name" value="<?php echo $name;?>">
+                                        <span class="error"><?php echo $nameErr;?></span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="name" class="">
+                                        <label for="cname" class="">
                                             Company Name
                                         </label>
-                                        <input class="form-control" type="text" id="cname" name="cname" value="">
+                                        <input class="form-control" type="text" id="cname" name="cname" value="<?php echo $cname;?>">
+
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="name" class="required">
+                                        <label for="email" class="required">
                                             Your Email
                                         </label>
-                                        <input class="form-control" type="text" id="email" name="email" value="">
+                                        <input class="form-control" type="text" id="email" name="email" value="<?php echo $email;?>">
+                                        <span class="error"><?php echo $emailErr;?></span>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="name" class="required">
+                                        <label for="telephone" class="required">
                                             Your Telephone Number
                                         </label>
-                                        <input class="form-control" type="text" id="telephone" name="telephone" value="">
+                                        <input class="form-control" type="text" id="telephone" name="telephone" value="<?php echo $telephone;?>">
+                                        <span class="error"><?php echo $telephoneErr;?></span>
                                     </div>
                                 </div>
                             </div>
@@ -176,7 +180,10 @@
                                 <label for="message" class="required">
                                     Message
                                 </label>
-                                <textarea class="form-control" name="message" rows="10" cols="50">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
+
+                                <textarea class="form-control" name="message" rows="10" cols="50"><?php echo $message;?></textarea>
+                                <span class="error"><?php echo $messageErr;?></span>
+                                <span class="success"><?php echo $success_message;?></span>
                             </div>
                             <!--Checkbox-->
                             <div class="form-group">
@@ -191,7 +198,7 @@
                             </div>
                             <!--Send button / required details text-->
                             <div class="action-block">
-                                <button id="formsubmit" name="submit" class="btn btn-primary">Send Enquiry</button>
+                                <button href="#contact-form" id="formsubmit" name="submit" class="btn btn-primary">Send Enquiry</button>
                                 <small class="helper-text"><span class="text-danger">*</span> Fields Required</small>
                             </div>
                         </form>
