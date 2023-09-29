@@ -8,10 +8,10 @@
 */
 
 try{
-  //Local DB connection
-  //$db = new PDO("mysql:host=localhost;dbname=articles", 'root', '');
-  //Live DB connection
-  $db = new PDO("mysql:host=localhost;dbname=liamwyli_articles", 'liamwylie', 'cIiw0MM#+ZW5'); 
+  //Local DB connection, will need table name changing.
+  $db = new PDO("mysql:host=localhost;dbname=articles", 'root', '');
+  //Live DB connection REMOVED
+ 
 
   //Give exception handling capability
   $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
@@ -20,10 +20,10 @@ try{
 }
 
 try{
-  //Local DB connection
-  //$dbenquiries = new PDO("mysql:host=localhost;dbname=netmatters_enquries", 'root', '');
-  //Live DB connection
-  $dbenquiries = new PDO("mysql:host=localhost;dbname=liamwyli_enquiries", 'liamwylie', 'cIiw0MM#+ZW5');
+  //Local DB connection, will need table name changing.
+  $dbenquiries = new PDO("mysql:host=localhost;dbname=netmatters_enquries", 'root', '');
+  //Live DB connection REMOVED
+
 
   //Give exception handling capability
   $dbenquiries->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
