@@ -7,7 +7,7 @@
         <div class="row">
           <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4">
             <div class="logo-container">
-              <a class="logo" href="#">
+              <a class="logo" href="index.php">
                 <img src="img/f-logo.png" alt="Netmatters">
               </a>
             </div>
@@ -21,7 +21,7 @@
             <div class="actions">
               <a href="#" class="btn btn-it hidden-xs hidden-sm header-btn" rel="noopener noreferrer">
                 <span class="pull-left icon-mouse"></span> Support </a>
-              <a href="#" class="btn btn-default hidden-xs hidden-sm header-btn">
+              <a href="contactus.php" class="btn btn-default hidden-xs hidden-sm header-btn">
                 <span class="pull-left icon-paperplane"></span> Contact </a>
               <div class="hidden-xs pull-left search-form-wrapper--tablet">
                 <form method="GET" action="#" accept-charset="UTF-8" class="search-form ">

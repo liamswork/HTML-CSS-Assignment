@@ -3,16 +3,15 @@
  include('inc/connection.php');
  include('classes/Article.php');
 
+ //Amount of articles to be shown to the screen. (Unpredicted functionality with more than 3.)
  $articleCount = 3;
  for($i = 0; $i<$articleCount;$i++){
     $currentArticle = fetchArticleRow($db, $i);
     printCard($currentArticle);
  }
- 
-//Function convert to my standard
-//category comes in as Case Studies
-//categoryClass goes out as case-studies 
 
+
+ //Main HTML with interpolated Article object properties.
 function printCard($article){
     echo"
 <div class='col-lg-4 col-sm-6'>
@@ -52,8 +51,10 @@ function printCard($article){
 ";
 }
 
+
  function fetchArticleRow($_db, $index) {
     try {
+        //SQL Query to pull article row.
         $sql = "SELECT * FROM articles
                 ORDER BY date_posted DESC 
                 LIMIT 3 OFFSET $index";
@@ -61,6 +62,7 @@ function printCard($article){
         $stmt = $_db->query($sql);
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         
+        //If we have a row, create a new article object, and pass it the row, for the constructor to use to set the properties.
         if ($row) {
             $_article = new Article($row);
             return $_article;

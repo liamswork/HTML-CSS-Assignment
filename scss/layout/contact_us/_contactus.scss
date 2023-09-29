@@ -1,3 +1,7 @@
+.has-error{
+    border-color:#d64541;
+}
+
 .nav-directory{
     p{
         margin:0 0 0 10px;
@@ -98,31 +102,75 @@
 
                 max-height:600px;
             }
+
             p{
                 margin-bottom: 25px;
+                .h3{
+                    font-size:20px;
+                    @media(min-width:992px){
+                        font-size:24px;
+                    }
+                }
             }
         }
         //Enquiry form
         .col-lg-8{
+            position: relative;
+            min-height: 1px;
+
+
             #contact-form{
+                padding:15px 35px;
                 background-color: #e6e7e9;
                 border-radius: 10px;
-                padding: 30px;
+
                 
                 //inputs
                 .row{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: flex-end; //keeps form aligned when one column has error but other does not.
+                    .input{
+                        width:100%;
+                        @media(min-width:992px){
+                            width:45%;
+                            margin-right:25px;
+                        }
+                    }
                     label{
                         font-weight:600;
                         color:$color-primary;
                     }
-                }
-                
-                //Textarea and checkbox containers
-                .form-group{
-                    textarea{
-                        min-height: 100px;
-                        height: 100px;
+                    p{
+                        margin: 0 0 11px 0;
                     }
+                    //Textarea and checkbox containers
+                    .form-group{
+                        width:100%;
+                        textarea{
+                            min-height: 100px;
+                            height: 100px;
+
+                        }
+                        label{
+                            font-weight:600;
+                            color:$color-primary;
+                        }
+                        .media-body{
+                            font-size:16px;
+                            padding-left:16px;
+                            font-weight:600;
+                            line-height:32px;
+                            a{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+                .form-group{
+                    width:100%;
                     label{
                         font-weight:600;
                         color:$color-primary;
@@ -143,11 +191,19 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    #formsubmit{
+                        &:hover{
+                            background-color: $color-tertiary;
+                        }
+                    }
+                    @media(max-width:360px){
+                        flex-direction: column-reverse;
+                    }
                     small{
                         font-size:14px;
                     }
+                    padding-bottom:25px;
                 }
-
             }
         }
     }

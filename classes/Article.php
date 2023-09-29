@@ -13,9 +13,15 @@
  * 7.article_body       VARCHAR[128]        128 characters      Large Article Description.
  * 8.author             VARCHAR[32]         32 characters       Name, such as "Bethany Shakespeare", default: "Netmatters"
  * 9.author_avatar      VARCHAR[64]         64 characters       Image path to authors avatar. default: Netmatters logo.
- * 10.date_posted        Date                N/A                 Date posted. Format DD/MM/YYYY, database defaults this entry to todays date.
+ * 10.date_posted       Datetime            N/A                 Date posted. Format DD/MM/YYYY, database defaults this entry to todays date.
  * 
+ * This schema could be easily passed to a client, (in a more layman friendly version) where they could write their article, and
+ * have to provide certain meta info about the article. With this in mind, certain conversions have been made to fit the more
+ * appropriate semantics of html/css. These can be found below the constructor.
  * 
+ * Certain info is defaulted. See phpmyadmin db schema for details, or read descriptions above.
+ * 
+ * Instances of Article are created in "articles.php" and their properties are delivered within articles.php - printCard($article)
  * 
  */
 
@@ -59,6 +65,7 @@ class Article
         return $firstWord;
     }
 
+    //Takes read time integer, and appends additional text to the end.
     private function generateReadTime($rt){
         $readTimeText = ($rt . " - MINUTE READ");
         return $readTimeText;

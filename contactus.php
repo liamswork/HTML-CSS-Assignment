@@ -135,56 +135,59 @@
                     </div>
 
                     <div class="col-lg-8 col-lg-pull-4">
-                        <form  id="contact-form" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                        <form id="contact-form" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                             <!--Inputs-->
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="input">
                                     <div class="form-group">
                                         <label for="name" class="required">
                                             Your Name
                                         </label>
-                                        <input class="form-control" type="text" id="name" name="name" value="<?php echo $name;?>">
-                                        <span class="error"><?php echo $nameErr;?></span>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="cname" class="">
-                                            Company Name
-                                        </label>
-                                        <input class="form-control" type="text" id="cname" name="cname" value="<?php echo $cname;?>">
+                                        <p class="error"><?php echo $nameErr;?></p>
+                                        <input class="form-control <?php if($nameErr){echo "has-error";}?>" type="text" id="name" name="name" value="<?php echo $name;?>">
 
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="input">
+                                    <div class="form-group">
+                                        <label for="cname" class="">
+                                            Company Name
+                                        </label>                                        
+                                        <p class="error"><?php echo $cnameErr?></p>
+                                        <input class="form-control <?php if($cnameErr){echo "has-error";}?>" type="text" id="cname" name="cname" value="<?php echo $cname;?>">
+                                    </div>
+                                </div>
+                                <div class="input">
                                     <div class="form-group">
                                         <label for="email" class="required">
                                             Your Email
                                         </label>
-                                        <input class="form-control" type="text" id="email" name="email" value="<?php echo $email;?>">
-                                        <span class="error"><?php echo $emailErr;?></span>
+                                        <p class="error"><?php echo $emailErr;?></p>
+                                        <input class="form-control <?php if($emailErr){echo "has-error";}?>" type="text" id="email" name="email" value="<?php echo $email;?>">
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="input">
                                     <div class="form-group">
                                         <label for="telephone" class="required">
                                             Your Telephone Number
                                         </label>
-                                        <input class="form-control" type="text" id="telephone" name="telephone" value="<?php echo $telephone;?>">
-                                        <span class="error"><?php echo $telephoneErr;?></span>
+                                        <p class="error"><?php echo $telephoneErr;?></p>
+                                        <input class="form-control <?php if($telephoneErr){echo "has-error";}?>" type="text" id="telephone" name="telephone" value="<?php echo $telephone;?>">
+
                                     </div>
                                 </div>
-                            </div>
                             <!--Message-->
                             <div class="form-group">
                                 <label for="message" class="required">
                                     Message
                                 </label>
 
-                                <textarea class="form-control" name="message" rows="10" cols="50"><?php echo $message;?></textarea>
+                                <textarea class="form-control <?php if($messageErr){echo "has-error";}?>" name="message" rows="10" cols="50"><?php echo $message;?></textarea>
                                 <span class="error"><?php echo $messageErr;?></span>
                                 <span class="success"><?php echo $success_message;?></span>
                             </div>
+                            </div>
+
                             <!--Checkbox-->
                             <div class="form-group">
                                 <label class="checkcontainer">
