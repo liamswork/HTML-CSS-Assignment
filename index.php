@@ -170,7 +170,7 @@
             </div>
         </div>
 
-        <!-- Php outputs may appear here for debugging purposes. -->
+        <!-- Php Debug Container, remove on production for cleanliness -->
         <div  class="container">
           <p style="color:red">
           <?php

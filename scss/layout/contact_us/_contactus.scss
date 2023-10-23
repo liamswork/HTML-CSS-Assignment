@@ -1,5 +1,8 @@
 .has-error{
-    border-color:#d64541;
+    border-color:#d64541 !important;
+}
+.has-error:focus{
+    border-color:#d64541 !important;
 }
 
 .nav-directory{
@@ -120,22 +123,16 @@
 
 
             #contact-form{
-                padding:15px 35px;
+                padding:30px;
                 background-color: #e6e7e9;
                 border-radius: 10px;
-
                 
                 //inputs
                 .row{
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    align-items: flex-end; //keeps form aligned when one column has error but other does not.
                     .input{
-                        width:100%;
-                        @media(min-width:992px){
-                            width:45%;
-                            margin-right:25px;
+                        
+                        @media(max-width:991px){
+                            width:100%;
                         }
                     }
                     label{
@@ -146,12 +143,16 @@
                         margin: 0 0 11px 0;
                     }
                     //Textarea and checkbox containers
+                    .text-area{
+                        padding:1rem;
+                    }
+
                     .form-group{
-                        width:100%;
                         textarea{
+                            width:100%;
                             min-height: 100px;
                             height: 100px;
-
+                            box-sizing: border-box !important;
                         }
                         label{
                             font-weight:600;
@@ -170,7 +171,6 @@
                 }
 
                 .form-group{
-                    width:100%;
                     label{
                         font-weight:600;
                         color:$color-primary;

@@ -9,8 +9,9 @@
 
 try{
   //Local DB connection, will need table name changing.
-  $db = new PDO("mysql:host=localhost;dbname=articles", 'root', '');
+  //$db = new PDO("mysql:host=localhost;dbname=articles", 'root', '');
   //Live DB connection REMOVED
+  $db = new PDO("mysql:host=localhost;dbname=liamwyli_articles", 'liamwylie', 'cIiw0MM#+ZW5');
  
 
   //Give exception handling capability
@@ -21,8 +22,10 @@ try{
 
 try{
   //Local DB connection, will need table name changing.
-  $dbenquiries = new PDO("mysql:host=localhost;dbname=netmatters_enquries", 'root', '');
+  //$dbenquiries = new PDO("mysql:host=localhost;dbname=netmatters_enquries", 'root', '');
   //Live DB connection REMOVED
+  $dbenquiries = new PDO("mysql:host=localhost;dbname=liamwyli_enquiries", 'liamwylie', 'cIiw0MM#+ZW5');
+
 
 
   //Give exception handling capability
