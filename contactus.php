@@ -138,7 +138,7 @@
                         <form id="contact-form" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>#contact-form">
                             <!--Alert box-->
                             <div class="alert-area">
-                                <div id="success-alert" class="<?php if($nameErr || $cnameErr || $emailErr || $telephoneErr || $messageErr ){echo "hidden";} ?> flash alert alert-success">
+                                <div id="success-alert" class="<?php if($validForm === false){echo "hidden";} ?> flash alert alert-success">
                                     Your message has been sent!
                                 </div>
                                 <div id="danger-alert" class="<?php if(!$nameErr && !$cnameErr && !$emailErr && !$telephoneErr && !$messageErr){echo "hidden";} ?> flash alert alert-danger">
@@ -190,7 +190,6 @@
                                         Message
                                     </label>
                                     <textarea class="form-control <?php if($messageErr){echo "has-error";}?>" name="message" rows="10" cols="50"><?php echo $message;?></textarea>
-                                    <span class="success"><?php echo $success_message;?></span>
                                 </div>
                             </div>
 

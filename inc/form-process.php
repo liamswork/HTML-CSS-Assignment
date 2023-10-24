@@ -20,10 +20,10 @@ $message = "Hi, I am interested in discussing a Our Offices solution, could you 
 $success_message = "";
 $emailPattern = "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/";
 $phonePattern = "/^(((\+44\s?|0044\s?)?|(\(?0))((2[03489]\)?\s?\d{4}\s?\d{4})|(1[23456789]1\)?\s?\d{3}\s?\d{4})|(1[23456789][234578][0234679]\)?\s?\d{6})|(1[2579][0245][0467]\)?\s?\d{5})|(11[345678]\)?\s?\d{3}\s?\d{4})|(1[35679][234689]\s?[46789][234567]\)?\s?\d{4,5})|([389]\d{2}\s?\d{3}\s?\d{4})|([57][0-9]\s?\d{4}\s?\d{4})|(500\s?\d{6})|(7[456789]\d{2}\s?\d{6})))$/";
-
+$validForm = false;
 //Validate inputs and handle empty submissions
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    
+    $validForm = false; //Reset form to invalid after successful submission.
     //Full name
     if (empty($_POST["name"])) {
         $nameErr = "Name is required.";
@@ -71,9 +71,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         empty($emailErr) &&
         empty($telephoneErr) &&
         empty($messageErr)
+        
     ) {
         $success_message = "Enquiry sent! We'll get back to you as soon as possible.";
-
+        $validForm = true;
         $stmt = $dbenquiries->prepare(
             "INSERT INTO enquiries (name, cname, email, telephone, message) VALUES (?, ?, ?, ?, ?)"
         );
@@ -83,8 +84,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->bindParam(4, $telephone);
         $stmt->bindParam(5, $message);
         $stmt->execute();
-        //Scroll back down to the contact form.
-        echo '<script>window.scrollTo(0,document.getElementById("contact-form").offsetTop);</script>';
     }
 
 }
