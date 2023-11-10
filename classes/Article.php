@@ -43,12 +43,15 @@ class Article
 
     //Some conversions are done here, from the SQL data to the readable text, and even to a css class (See convertSubCategory)
     public function __construct($row){
+
+
+
         $this->id = $row['article_id'];     
         $this->mainImage = $row['main_image'];
         $this->shortDesc = $row['short_description'];
-        $this->category = $row['category'];         
+        $this->category = $row['category'];  
         if($row['sub_category']){$this->subCategoryClass = $this->convertSubCategory($row['sub_category']);}
-        if($row['title']){$this->title = $this->trimArticleTitle($row['title']);}       
+        if($row['title']){$this->title = $this->trimArticleTitle($row['title']);}
         if($row['read_time']){$this->readTime = $this->generateReadTime($row['read_time']);}
         $this->articleBody = $row['article_body'];
         if($row['author']){$this->author = $row['author'];}
@@ -65,6 +68,7 @@ class Article
         return $firstWord;
     }
 
+    
     //Takes read time integer, and appends additional text to the end.
     private function generateReadTime($rt){
         $readTimeText = ($rt . " - MINUTE READ");
